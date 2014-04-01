@@ -15,5 +15,4 @@ luad:patient
 	shared:ethnicity
 	shared:person_neoplasm_cancer_status
 	shared_stage:stage_event
-		shared_stage:clinical_stage
 		shared_stage:pathologic_stage
