@@ -17,6 +17,9 @@ class Patient:
     def getbcr_patient_barcode(self):
     	return self.patientRootElement.find('luad:patient/shared:bcr_patient_barcode' , namespaces=getPatientXMLNameSpaces()).text
 
+    def getGender(self):
+    	return self.patientRootElement.find('luad:patient/shared:gender' , namespaces=getPatientXMLNameSpaces()).text
+
     def addMutation(self, mutation):
     	self.mutations.append(mutation)
 
@@ -159,12 +162,9 @@ def getListofPatients():
 	reader = csv.reader(ifile, delimiter='	')
 	patientBarcodeList = getPatientWithDrugBarcodes()
 	patientDict = getDictionaryOfPatients()
-	print patientDict
 	mutationList = []
 	for row in reader:
 	    if row[15][0:12] in patientBarcodeList:
 	    	mutation = Mutation(row)
 	    	patientDict[row[15][0:12]].addMutation(mutation)
-	return patientDict.items()
-
-getListofPatients()
+	return patientDict.values()
