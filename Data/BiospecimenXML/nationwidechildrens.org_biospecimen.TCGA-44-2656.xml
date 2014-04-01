@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:tcga_bcr xsi:schemaLocation="http://tcga.nci/bcr/xml/biospecimen/2.6 http://tcga-data.nci.nih.gov/docs/xsd/BCR/tcga.nci/bcr/xml/biospecimen/2.6/TCGA_BCR.Biospecimen.xsd" schemaVersion="2.6" xmlns:bio="http://tcga.nci/bcr/xml/biospecimen/2.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:admin="http://tcga.nci/bcr/xml/administration/2.6" xmlns:shared="http://tcga.nci/bcr/xml/clinical/shared/2.6" xmlns:bio_shared="http://tcga.nci/bcr/xml/biospecimen/shared/2.6" xmlns:cqcf="http://tcga.nci/bcr/xml/clinical/cqcf/2.6">
+    <admin:admin>
+        <admin:bcr xsd_ver="1.17">Nationwide Children's Hospital</admin:bcr>
+        <admin:batch_number xsd_ver="1.17">37.36.0</admin:batch_number>
+        <admin:disease_code xsd_ver="2.6">LUAD</admin:disease_code>
+        <admin:day_of_dcc_upload xsd_ver="1.17">17</admin:day_of_dcc_upload>
+        <admin:month_of_dcc_upload xsd_ver="1.17">1</admin:month_of_dcc_upload>
+        <admin:year_of_dcc_upload xsd_ver="1.17">2014</admin:year_of_dcc_upload>
+    </admin:admin>
+    <bio:patient>
+        <shared:bcr_patient_barcode cde="2673794" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656</shared:bcr_patient_barcode>
+        <shared:bcr_patient_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">42ca54fc-c1ae-41cd-bca1-7fe9810db460</shared:bcr_patient_uuid>
+        <shared:tissue_source_site cde="" xsd_ver="2.4" procurement_status="Completed" owner="">44</shared:tissue_source_site>
+        <shared:patient_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">2656</shared:patient_id>
+        <bio:days_to_index precision="day" cde="" xsd_ver="2.6" procurement_status="Completed" owner="">0</bio:days_to_index>
+        <bio:bcr_canonical_check>
+            <bio:bcr_patient_canonical_status cde="" xsd_ver="2.6" procurement_status="Completed" owner="">Canonical - Plus</bio:bcr_patient_canonical_status>
+            <bio:bcr_patient_canonical_reasons>
+                <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">Heterogeneity</bio:bcr_canonical_reason>
+            </bio:bcr_patient_canonical_reasons>
+        </bio:bcr_canonical_check>
+        <bio:samples>
+            <bio:sample>
+                <bio:sample_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:sample_type_id>
+                <bio:vial_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A</bio:vial_number>
+                <bio:sample_type cde="2673865" xsd_ver="2.4" procurement_status="Completed" owner="">Primary Tumor</bio:sample_type>
+                <bio:longest_dimension cde="2673866" xsd_ver="1.8" procurement_status="Completed" owner="">0.8</bio:longest_dimension>
+                <bio:intermediate_dimension cde="2673867" xsd_ver="1.8" procurement_status="Completed" owner="">0.8</bio:intermediate_dimension>
+                <bio:shortest_dimension cde="2673868" xsd_ver="1.8" procurement_status="Completed" owner="">0.4</bio:shortest_dimension>
+                <bio:initial_weight cde="2673869" xsd_ver="1.8" procurement_status="Completed" owner="">50</bio:initial_weight>
+                <bio:current_weight cde="2673870" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:freezing_method cde="2673871" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:oct_embedded cde="2673872" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:days_to_collection cde="" xsd_ver="2.6" procurement_status="Not Available" owner=""/>
+                <bio:time_between_clamping_and_freezing cde="2673873" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:time_between_excision_and_freezing cde="2673874" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:bcr_sample_barcode cde="2673864" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A</bio:bcr_sample_barcode>
+                <bio:bcr_sample_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5593f581-3d45-4a4a-a525-bfae1f4753a0</bio:bcr_sample_uuid>
+                <bio:portions>
+                    <bio:shipment_portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">11</bio:portion_number>
+                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">2190</bio:plate_id>
+                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">20</bio:center_id>
+                        <bio:shipment_portion_day_of_shipment cde="" xsd_ver="2.4" procurement_status="Completed" owner="">5</bio:shipment_portion_day_of_shipment>
+                        <bio:shipment_portion_month_of_shipment cde="" xsd_ver="2.4" procurement_status="Completed" owner="">3</bio:shipment_portion_month_of_shipment>
+                        <bio:shipment_portion_year_of_shipment cde="" xsd_ver="2.4" procurement_status="Completed" owner="">2012</bio:shipment_portion_year_of_shipment>
+                        <bio:shipment_portion_bcr_aliquot_barcode cde="" xsd_ver="2.4" procurement_status="Completed" owner="">TCGA-44-2656-01A-11-2190-20</bio:shipment_portion_bcr_aliquot_barcode>
+                        <bio:bcr_shipment_portion_uuid cde="" xsd_ver="2.4" procurement_status="Completed" owner="">84750167-98a3-4be6-a407-39a6c9629a14</bio:bcr_shipment_portion_uuid>
+                    </bio:shipment_portion>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">02</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">30</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">12</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2009</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Completed" owner="">113.00</bio:weight>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">6290eb0f-7ecb-4af6-8491-887ec56911d5</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">350.23</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Completed" owner="">1.90</bio:a260_a280_ratio>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3bc18f44-7acf-47b2-81e0-e47243349cdd</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0944</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">21</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-0944-01</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">6af6ceb4-722c-493e-befa-9a23abf84a8f</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">C</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096491790</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0945</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">05</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">26.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">21</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-0945-05</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8f1e4f35-2beb-4db3-ad14-03dbe8ddc7b4</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">C</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097517198</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0969</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">28</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-0969-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">c797820e-f53e-49df-a7d0-0fcd7ea1d249</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">D</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097533207</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0970</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">28</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-0970-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">fa0b982b-2ec2-42e8-827e-021e74f5e87f</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">D</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097532919</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1547</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">02</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">13.30</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-1547-02</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">a7a8f53a-621f-4d60-8c8e-c5d06f208443</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">G</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049929829</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1549</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.67</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-1549-01</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">7bbc5291-ea7a-4ce9-baa4-7a30a079eace</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">G</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049930118</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1551</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">05</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">26.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-1551-05</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5ced8b79-b625-4120-92bb-7cf34ebf0be5</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">G</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049930022</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1553</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-1553-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">6ae9486a-5e74-4cdd-a39d-7cbc75e916ed</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.05</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">G</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049984778</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1555</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-1555-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">02e67e6e-e2cf-422b-a327-db8d67b251cd</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.05</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">G</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049985984</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A271</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">20.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-A271-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">989ECCFD-D0E0-45CA-AF4C-7324D450E956</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.07</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132160633</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A273</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-A273-01</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">27BB1DC2-F615-4FCE-BB6C-D9C5DA2F01D6</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132158817</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A276</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">05</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">13</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-A276-05</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E3DF8A4B-8FF5-4723-BA74-E300C4E5FC13</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0145675769</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A27C</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">26</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">10.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">13</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-A27C-26</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">33539B9B-C5D6-49F1-B440-FD9138FF6887</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132159966</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A313</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">13.40</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">26</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">06</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02D-A313-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">73F6EB52-7B85-49A2-AD10-9AD7314ED958</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.07</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">F</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0153879482</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">aDNA Preparation Type</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">R</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">RNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.13</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">161.30</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Completed" owner="">1.80</bio:a260_a280_ratio>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02R</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">a8463ad6-6ffd-4a8f-88f8-a6ca48389cae</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0946</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">07</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">26.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">21</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02R-0946-07</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">7b9dc578-8869-4322-a705-bfb9942d9b65</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.13</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">C</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097517486</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A278</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">07</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">13.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02R-A278-07</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">BDB0340D-DA29-440A-8F4E-7D1FAC2D59AC</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.13</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132159984</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Allprep RNA Extraction</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:rna>
+                                    <bio:ratio_28s_18s cde="" xsd_ver="1.8" procurement_status="Completed" owner="">1.30</bio:ratio_28s_18s>
+                                    <bio:rinvalue cde="" xsd_ver="1.8" procurement_status="Completed" owner="">8.50</bio:rinvalue>
+                                </bio:rna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">T</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">Total RNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.10</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">53.00</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02T</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4c68c9dd-75cc-49f5-83d9-67b84d0a997c</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0947</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">13</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">30.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">21</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02T-0947-13</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">77c90463-1cce-4af6-853c-883b5d69560f</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.10</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">C</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097518542</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Total RNA</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:rna>
+                                    <bio:ratio_28s_18s cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    <bio:rinvalue cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                </bio:rna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">W</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">Repli-G (Qiagen) DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">64.00</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02W</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">fd761a47-4eef-47e0-92dd-55c834c345ec</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0928</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02W-0928-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">b2773f71-23ca-4f92-99cb-1452846a1b36</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096506358</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0929</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02W-0929-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">970346df-affd-4b97-b69b-cd0c44afb6b0</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096484662</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Repli-G</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">NO</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">X</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">Repli-G X (Qiagen) DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">67.00</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02X</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">7ce88a60-f3c0-4c11-96e0-168347c933c7</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0930</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02X-0930-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">be0eb7ea-2c40-4962-a4a8-29a5fdae72f2</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097512854</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0931</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02X-0931-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">7dfd0a3f-cd71-4008-ad07-1206b7cf3f36</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096491458</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Repli-G X</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">NO</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TOP</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">85</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">80</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">5</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">10</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">10</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-01-BS1</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">82bbeb8f-6e54-49bd-95bf-75eda3c80c23</bio:bcr_slide_uuid>
+                            </bio:slide>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">BOTTOM</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">85</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">80</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">3</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">12</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">10</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-02-BS2</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">2c768435-cc25-4818-ad32-19933a9a7c67</bio:bcr_slide_uuid>
+                            </bio:slide>
+                        </bio:slides>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">12</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Completed" owner="">30.00</bio:weight>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-12</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">AE981D74-8A11-455B-8BEE-E64772D0CD78</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">43.15</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-12D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">AC2E24BD-8117-4BE1-BEAE-B7F9882CB563</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A27T</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">25</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-12D-A27T-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E368FA33-7CD5-4038-A787-6BC82378A386</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">Heterogeneity</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.07</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0145673893</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">aDNA Preparation Type</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">PicoGreen</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TOP</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">50</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">50</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">50</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">5</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-01-TS1</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">ef924493-5568-45e4-aea8-552b5e99f5ae</bio:bcr_slide_uuid>
+                            </bio:slide>
+                        </bio:slides>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">41</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">06</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Completed" owner="">20.00</bio:weight>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-41</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3EF4D482-852B-42D7-821E-6865A254438D</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">22.02</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-41D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8FE1EBA6-D657-4764-A5FA-73C053903B0A</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A27T</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">25</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-41D-A27T-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">F2B495BF-CAF4-48BF-A090-92D04D017A7E</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">Heterogeneity</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.07</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0145632515</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">aDNA Preparation Type</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">PicoGreen</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TOP</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">75</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">75</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">25</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">4</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">2</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">3</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01A-04-TS4</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">D00DB24E-08D4-4E55-AA28-4C8F707F1308</bio:bcr_slide_uuid>
+                            </bio:slide>
+                        </bio:slides>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                </bio:portions>
+                <bio:tumor_pathology/>
+                <bio:method_of_sample_procurement cde="3103514" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio:NCNNCT_OthMethONSP cde="" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio_shared:other_method_of_sample_procurement cde="2006730" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+                <bio:days_to_sample_procurement cde="" xsd_ver="2.6" procurement_status="Not Available" owner=""/>
+                <bio:pathology_report_uuid cde="" xsd_ver="2.4" procurement_status="Completed" owner="">3c7e7f0d-f1b6-42cf-895e-df6cc52f4c2a</bio:pathology_report_uuid>
+                <bio:diagnostic_slides>
+                    <bio:ffpe_slide_uuid cde="" xsd_ver="2.4" procurement_status="Completed" owner="">8C74D61B-A74C-4637-A1FA-BFD4E9EAE964</bio:ffpe_slide_uuid>
+                </bio:diagnostic_slides>
+            </bio:sample>
+            <bio:sample>
+                <bio:sample_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:sample_type_id>
+                <bio:vial_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">B</bio:vial_number>
+                <bio:sample_type cde="2673865" xsd_ver="2.4" procurement_status="Completed" owner="">Primary Tumor</bio:sample_type>
+                <bio:longest_dimension cde="2673866" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:intermediate_dimension cde="2673867" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:shortest_dimension cde="2673868" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:initial_weight cde="2673869" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:current_weight cde="2673870" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:freezing_method cde="2673871" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:oct_embedded cde="2673872" xsd_ver="1.8" procurement_status="Completed" owner="">false</bio:oct_embedded>
+                <bio:days_to_collection precision="day" cde="" xsd_ver="2.6" procurement_status="Completed" owner="">1002</bio:days_to_collection>
+                <bio:time_between_clamping_and_freezing cde="2673873" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:time_between_excision_and_freezing cde="2673874" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:bcr_sample_barcode cde="2673864" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B</bio:bcr_sample_barcode>
+                <bio:bcr_sample_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">14F26352-B073-4ED8-8B2A-96B9429F25A0</bio:bcr_sample_uuid>
+                <bio:portions>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">06</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">13</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Completed" owner="">400.00</bio:weight>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">69CE4B02-C900-472B-B254-0ADFEFCFD35B</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">7.40</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1988E29F-2A1B-48B9-820D-8A6E0EC1FE61</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A271</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">20.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06D-A271-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4AF6CB5C-4CA2-49C7-B0C5-9F777E172BDE</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.08</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132160681</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A273</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06D-A273-01</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">B6F8FF3D-9A78-461A-B8F9-29AC05A0EEA4</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132158796</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A276</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">05</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">13</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06D-A276-05</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E835B92B-461B-426F-B837-1C8C51F4C52B</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0145675768</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A27C</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">26</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">10.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">13</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06D-A27C-26</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5D42C38E-21D2-4557-9A46-AA13CA626BD6</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132179183</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Allprep FFPE DNA</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">PicoGreen</bio:spectrophotometer_method>
+                            </bio:analyte>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">R</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">RNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.16</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">32.23</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Completed" owner="">1.82</bio:a260_a280_ratio>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06R</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">C5C8F6E5-4B3D-4C70-8579-FECADCDD0884</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A277</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">07</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">13.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-06R-A277-07</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8349B70A-DAD2-492A-A7D1-95E734A96A5E</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.16</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0145631420</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">HighPure miRNA (Allprep DNA) FFPE RNA</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:rna>
+                                    <bio:ratio_28s_18s cde="" xsd_ver="1.8" procurement_status="Completed" owner="">0.00</bio:ratio_28s_18s>
+                                    <bio:rinvalue cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2.40</bio:rinvalue>
+                                </bio:rna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TOP</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">75</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">75</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">3</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">1</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">21</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">7</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">2</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">3</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-01B-05-BS5</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">DDE6B343-CC69-494F-A467-8645E6D82796</bio:bcr_slide_uuid>
+                            </bio:slide>
+                        </bio:slides>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                </bio:portions>
+                <bio:tumor_pathology/>
+                <bio:method_of_sample_procurement cde="3103514" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio:NCNNCT_OthMethONSP cde="" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio_shared:other_method_of_sample_procurement cde="2006730" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+                <bio:days_to_sample_procurement cde="" xsd_ver="2.6" procurement_status="Not Available" owner=""/>
+                <bio:pathology_report_uuid cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D600CA81-C130-4B4F-99B7-307C04FC5863</bio:pathology_report_uuid>
+                <bio:diagnostic_slides/>
+            </bio:sample>
+            <bio:sample>
+                <bio:sample_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">10</bio:sample_type_id>
+                <bio:vial_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A</bio:vial_number>
+                <bio:sample_type cde="2673865" xsd_ver="2.4" procurement_status="Completed" owner="">Blood Derived Normal</bio:sample_type>
+                <bio:longest_dimension cde="2673866" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:intermediate_dimension cde="2673867" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:shortest_dimension cde="2673868" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:initial_weight cde="2673869" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:current_weight cde="2673870" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:freezing_method cde="2673871" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:oct_embedded cde="2673872" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:days_to_collection cde="" xsd_ver="2.6" procurement_status="Not Available" owner=""/>
+                <bio:time_between_clamping_and_freezing cde="2673873" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:time_between_excision_and_freezing cde="2673874" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:bcr_sample_barcode cde="2673864" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A</bio:bcr_sample_barcode>
+                <bio:bcr_sample_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">964b9560-2f8d-4c19-943b-6941e4be7042</bio:bcr_sample_uuid>
+                <bio:portions>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">22</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">01</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0fe3ee24-eba5-42bf-a5d5-ac3e1a975dab</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">205.90</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Completed" owner="">1.90</bio:a260_a280_ratio>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">7555142e-2e85-4b8a-944b-d74260c2fd4e</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0944</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">21</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D-0944-01</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3710317f-e217-4df8-b4bb-cad0a38468b4</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">H</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">3</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096491721</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0969</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">28</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D-0969-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">03b8420d-480f-48e1-88a7-8ee9917049a6</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">B</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097533234</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0970</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">28</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D-0970-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">2b10bb74-4db8-486e-9ef5-1185c07fbc6f</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">B</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097532120</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A271</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">20.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D-A271-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A5C5538E-4E56-4F30-8313-0B390A30E002</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.08</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132160635</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A273</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D-A273-01</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">251A7805-BCAC-4E57-8B17-83571338538E</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132159782</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A27C</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">26</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">10.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">13</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D-A27C-26</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">D6612652-AFB4-4472-983B-B9130E31D0BE</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">FFPE Validation</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0132160012</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A313</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">13.40</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">26</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">06</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01D-A313-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4755F060-B393-4BE8-881F-C8E961D2F687</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.08</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">F</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0153879483</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Chemical Lysis DNA Extraction</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">W</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">Repli-G (Qiagen) DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">111.00</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01W</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">e88858d6-dcaf-43a2-bc22-9fe9b06d3b7b</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0928</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01W-0928-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">a44a1410-c679-4fa1-92c1-1de810a33ec2</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">F</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096506338</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0929</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01W-0929-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">2f378e3a-fdbf-4882-ab64-31c40a92a09a</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">F</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096484642</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Repli-G</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">NO</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">X</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">Repli-G X (Qiagen) DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">79.00</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01X</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">a4e1ce4e-bd66-42e5-8729-19ba3c4b0a99</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0930</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01X-0930-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4e9038a6-36af-4cdc-b529-b2f85be95066</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">F</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0097512834</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">0931</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">80.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">15</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">04</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-10A-01X-0931-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">e4ce16c9-a0d2-466a-8ed7-978207ecdf63</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.50</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">F</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0096491532</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">Repli-G X</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">NO</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides/>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                </bio:portions>
+                <bio:tumor_pathology/>
+                <bio:method_of_sample_procurement cde="3103514" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio:NCNNCT_OthMethONSP cde="" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio_shared:other_method_of_sample_procurement cde="2006730" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+                <bio:days_to_sample_procurement cde="" xsd_ver="2.6" procurement_status="Not Available" owner=""/>
+                <bio:pathology_report_uuid cde="" xsd_ver="2.4" procurement_status="Completed" owner="">B008B862-1E14-456D-AB56-91E647AEB26E</bio:pathology_report_uuid>
+                <bio:diagnostic_slides/>
+            </bio:sample>
+            <bio:sample>
+                <bio:sample_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">11</bio:sample_type_id>
+                <bio:vial_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A</bio:vial_number>
+                <bio:sample_type cde="2673865" xsd_ver="2.4" procurement_status="Completed" owner="">Solid Tissue Normal</bio:sample_type>
+                <bio:longest_dimension cde="2673866" xsd_ver="1.8" procurement_status="Completed" owner="">2</bio:longest_dimension>
+                <bio:intermediate_dimension cde="2673867" xsd_ver="1.8" procurement_status="Completed" owner="">0.9</bio:intermediate_dimension>
+                <bio:shortest_dimension cde="2673868" xsd_ver="1.8" procurement_status="Completed" owner="">0.9</bio:shortest_dimension>
+                <bio:initial_weight cde="2673869" xsd_ver="1.8" procurement_status="Completed" owner="">530</bio:initial_weight>
+                <bio:current_weight cde="2673870" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:freezing_method cde="2673871" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:oct_embedded cde="2673872" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:days_to_collection cde="" xsd_ver="2.6" procurement_status="Not Available" owner=""/>
+                <bio:time_between_clamping_and_freezing cde="2673873" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:time_between_excision_and_freezing cde="2673874" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                <bio:bcr_sample_barcode cde="2673864" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A</bio:bcr_sample_barcode>
+                <bio:bcr_sample_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5f9a1c1a-b228-4da6-b906-73b4abf47b47</bio:bcr_sample_uuid>
+                <bio:portions>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">16</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">12</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2010</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Completed" owner="">62.00</bio:weight>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">f559842c-3d0f-4768-ac4a-2fdbbf5ef5b4</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.16</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">207.73</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Completed" owner="">1.90</bio:a260_a280_ratio>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">f3cdf258-9314-4e34-b8b6-df82f4b34b5b</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1547</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">02</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">13.30</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01D-1547-02</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">888c7dd2-95f2-4d7e-a9b8-feb960b24950</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.16</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049929812</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1549</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">01</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">6.67</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01D-1549-01</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1408a766-d0f2-4b42-b25a-e17d42428667</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.16</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049930100</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1551</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">05</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">26.70</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01D-1551-05</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">cfeae035-2c51-4a62-b40f-c03dc5fcd700</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.16</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049930004</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1553</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01D-1553-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">d4687ccf-3db2-457f-b3da-05ffc8462aaa</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.05</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">B</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049985548</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1555</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">09</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2011</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01D-1555-09</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">02fb35ee-847f-47e6-a40a-2cd75f81f52e</bio:bcr_aliquot_uuid>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.05</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">1049985918</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">22</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">aDNA Preparation Type</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">NO</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">UV Spec</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TOP</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-01-TS1</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">24d5e405-fb65-4cf7-b58b-d98739644c10</bio:bcr_slide_uuid>
+                            </bio:slide>
+                        </bio:slides>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">21</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">14</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Completed" owner="">30.00</bio:weight>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-21</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5A08CFB6-37BF-463E-936D-8F4E6852304B</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.14</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">31.09</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-21D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4900D12C-0F82-40B3-BE06-6334D63291B2</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A27T</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">25</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-21D-A27T-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E757C493-8F36-42DA-8790-3E8DA29C0E47</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">Heterogeneity</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.07</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">2</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0145631330</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">aDNA Preparation Type</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">PicoGreen</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TOP</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">100</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">5</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">7</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-02-TS2</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8C5BE3BC-139F-4C79-97D2-0CC8A0EBA5F9</bio:bcr_slide_uuid>
+                            </bio:slide>
+                        </bio:slides>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                    <bio:portion>
+                        <bio:portion_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">31</bio:portion_number>
+                        <bio:day_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">25</bio:day_of_creation>
+                        <bio:month_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">02</bio:month_of_creation>
+                        <bio:year_of_creation cde="2673760" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_creation>
+                        <bio:weight cde="2673761" xsd_ver="1.8" procurement_status="Completed" owner="">30.00</bio:weight>
+                        <bio:bcr_portion_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-31</bio:bcr_portion_barcode>
+                        <bio:bcr_portion_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">C5441ABE-1298-48A3-9B4B-87E4DC011EFF</bio:bcr_portion_uuid>
+                        <bio:analytes>
+                            <bio:analyte>
+                                <bio:analyte_type_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">D</bio:analyte_type_id>
+                                <bio:analyte_type cde="" xsd_ver="1.10" procurement_status="Completed" owner="">DNA</bio:analyte_type>
+                                <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.15</bio:concentration>
+                                <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">28.51</bio:amount>
+                                <bio:a260_a280_ratio cde="2673841" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:gel_image_file cde="2673842" xsd_ver="1.8" procurement_status="Completed" owner="">https://sharedoc.nchri.org/tcga-bcr/default.aspx</bio:gel_image_file>
+                                <bio:well_number cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_analyte_barcode cde="2673835" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-31D</bio:bcr_analyte_barcode>
+                                <bio:bcr_analyte_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5C86E193-8C6C-4683-B188-CFD5A32BC867</bio:bcr_analyte_uuid>
+                                <bio:aliquots>
+                                    <bio:aliquot>
+                                        <bio:plate_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">A27T</bio:plate_id>
+                                        <bio:center_id cde="" xsd_ver="2.4" procurement_status="Completed" owner="">08</bio:center_id>
+                                        <bio:amount cde="2673838" xsd_ver="1.8" procurement_status="Completed" owner="">40.00</bio:amount>
+                                        <bio:day_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">25</bio:day_of_shipment>
+                                        <bio:month_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">03</bio:month_of_shipment>
+                                        <bio:year_of_shipment cde="" xsd_ver="1.8" procurement_status="Completed" owner="">2013</bio:year_of_shipment>
+                                        <bio:bcr_aliquot_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-31D-A27T-08</bio:bcr_aliquot_barcode>
+                                        <bio:bcr_aliquot_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">8DFEAB5B-0731-440F-908A-A5809D15ED8D</bio:bcr_aliquot_uuid>
+                                        <bio:bcr_biospecimen_canonical_reasons>
+                                            <bio:bcr_canonical_reason cde="" xsd_ver="2.6" procurement_status="Completed" owner="">Heterogeneity</bio:bcr_canonical_reason>
+                                        </bio:bcr_biospecimen_canonical_reasons>
+                                        <bio:concentration cde="2673837" xsd_ver="1.8" procurement_status="Completed" owner="">0.08</bio:concentration>
+                                        <bio:plate_row cde="" xsd_ver="2.3" procurement_status="Completed" owner="">A</bio:plate_row>
+                                        <bio:plate_column cde="" xsd_ver="2.3" procurement_status="Completed" owner="">4</bio:plate_column>
+                                        <bio:biospecimen_barcode_bottom cde="" xsd_ver="2.3" procurement_status="Completed" owner="">0145673892</bio:biospecimen_barcode_bottom>
+                                        <bio:source_center cde="" xsd_ver="2.4" procurement_status="Completed" owner="">23</bio:source_center>
+                                    </bio:aliquot>
+                                </bio:aliquots>
+                                <bio:protocols>
+                                    <bio:protocol>
+                                        <bio:experimental_protocol_type cde="" xsd_ver="1.8" procurement_status="Completed" owner="">aDNA Preparation Type</bio:experimental_protocol_type>
+                                        <bio:protocol_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                        <bio:protocol_file_name cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                    </bio:protocol>
+                                </bio:protocols>
+                                <bio:dna>
+                                    <bio:normal_tumor_genotype_match cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:normal_tumor_genotype_match>
+                                    <bio:pcr_amplification_successful cde="" xsd_ver="1.8" procurement_status="Completed" owner="">YES</bio:pcr_amplification_successful>
+                                </bio:dna>
+                                <bio:spectrophotometer_method cde="3008378" xsd_ver="2.3" procurement_status="Completed" owner="">PicoGreen</bio:spectrophotometer_method>
+                            </bio:analyte>
+                        </bio:analytes>
+                        <bio:slides>
+                            <bio:slide>
+                                <bio:section_location cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TOP</bio:section_location>
+                                <bio:number_proliferating_cells cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_tumor_cells cde="2841219" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_tumor_cells>
+                                <bio:percent_tumor_nuclei cde="2841225" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_tumor_nuclei>
+                                <bio:percent_normal_cells cde="2841233" xsd_ver="1.8" procurement_status="Completed" owner="">100</bio:percent_normal_cells>
+                                <bio:percent_necrosis cde="2841237" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_necrosis>
+                                <bio:percent_stromal_cells cde="2841241" xsd_ver="1.8" procurement_status="Completed" owner="">0</bio:percent_stromal_cells>
+                                <bio:percent_inflam_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_lymphocyte_infiltration cde="2841253" xsd_ver="1.8" procurement_status="Completed" owner="">20</bio:percent_lymphocyte_infiltration>
+                                <bio:percent_monocyte_infiltration cde="2841257" xsd_ver="1.8" procurement_status="Completed" owner="">20</bio:percent_monocyte_infiltration>
+                                <bio:percent_granulocyte_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:percent_neutrophil_infiltration cde="2841267" xsd_ver="1.8" procurement_status="Completed" owner="">40</bio:percent_neutrophil_infiltration>
+                                <bio:percent_eosinophil_infiltration cde="" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                                <bio:bcr_slide_barcode cde="" xsd_ver="1.8" procurement_status="Completed" owner="">TCGA-44-2656-11A-03-TS3</bio:bcr_slide_barcode>
+                                <bio:bcr_slide_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">E842A27F-1AE8-4E06-89C9-13105DBE5DC9</bio:bcr_slide_uuid>
+                            </bio:slide>
+                        </bio:slides>
+                        <bio:LCE cde="3251491" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+                    </bio:portion>
+                </bio:portions>
+                <bio:tumor_pathology/>
+                <bio:method_of_sample_procurement cde="3103514" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio:NCNNCT_OthMethONSP cde="" xsd_ver="2.3" procurement_status="Not Available" owner=""/>
+                <bio_shared:other_method_of_sample_procurement cde="2006730" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+                <bio:days_to_sample_procurement cde="" xsd_ver="2.6" procurement_status="Not Available" owner=""/>
+                <bio:pathology_report_uuid cde="" xsd_ver="2.4" procurement_status="Completed" owner="">013FC00D-CF42-403F-9A33-F221CF9795C7</bio:pathology_report_uuid>
+                <bio:diagnostic_slides/>
+            </bio:sample>
+        </bio:samples>
+        <cqcf:biospecimen_cqcf>
+            <cqcf:maximum_tumor_dimension cde="64215" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:days_to_sample_procurement precision="day" cde="3288495" xsd_ver="2.5" procurement_status="Completed" owner="">28</cqcf:days_to_sample_procurement>
+            <cqcf:method_of_sample_procurement cde="3103514" xsd_ver="2.3" procurement_status="Completed" owner="">Other Method (please specify)</cqcf:method_of_sample_procurement>
+            <cqcf:other_method_of_sample_procurement cde="2006730" xsd_ver="2.5" procurement_status="Completed" owner="">Lobectomy</cqcf:other_method_of_sample_procurement>
+            <cqcf:country cde="3203072" xsd_ver="2.5" procurement_status="Completed" owner="">United States</cqcf:country>
+            <cqcf:vessel_used cde="3081940" xsd_ver="2.5" procurement_status="Completed" owner="">Cryovial</cqcf:vessel_used>
+            <cqcf:other_vessel_used cde="3288137" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:submitted_for_lce cde="3288488" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+            <cqcf:sample_prescreened cde="3081942" xsd_ver="2.5" procurement_status="Completed" owner="">YES</cqcf:sample_prescreened>
+            <cqcf:top_slide_submitted cde="3081944" xsd_ver="1.8" procurement_status="Completed" owner="">YES</cqcf:top_slide_submitted>
+            <cqcf:digital_image_submitted cde="3081948" xsd_ver="1.8" procurement_status="Completed" owner="">NO</cqcf:digital_image_submitted>
+            <cqcf:ffpe_tumor_slide_submitted cde="3295811" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:b_cell_tumor_slide_submitted cde="3320292" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:t_cell_tumor_slide_submitted cde="3320295" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:tumor_samples>
+                <cqcf:tumor_sample>
+                    <cqcf:vial_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1</cqcf:vial_number>
+                    <cqcf:bcr_sample_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5593f581-3d45-4a4a-a525-bfae1f4753a0</cqcf:bcr_sample_uuid>
+                    <cqcf:tumor_weight cde="3081946" xsd_ver="2.5" procurement_status="Completed" owner="">710</cqcf:tumor_weight>
+                    <cqcf:tumor_nuclei_percent cde="2841225" xsd_ver="2.5" procurement_status="Completed" owner="">80</cqcf:tumor_nuclei_percent>
+                    <cqcf:tumor_necrosis_percent cde="2841237" xsd_ver="2.5" procurement_status="Completed" owner="">5</cqcf:tumor_necrosis_percent>
+                    <cqcf:tumor_pathology/>
+                </cqcf:tumor_sample>
+            </cqcf:tumor_samples>
+            <cqcf:normal_controls>
+                <cqcf:normal_control>
+                    <cqcf:vial_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">2</cqcf:vial_number>
+                    <cqcf:bcr_sample_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">964b9560-2f8d-4c19-943b-6941e4be7042</cqcf:bcr_sample_uuid>
+                    <cqcf:normal_control_type cde="3081936" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+                    <cqcf:method_of_normal_sample_procurement cde="3288147" xsd_ver="2.5" procurement_status="Completed" owner="">Blood Draw</cqcf:method_of_normal_sample_procurement>
+                    <cqcf:days_to_normal_sample_procurement cde="3288496" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+                </cqcf:normal_control>
+                <cqcf:normal_control>
+                    <cqcf:vial_number cde="" xsd_ver="2.4" procurement_status="Completed" owner="">1</cqcf:vial_number>
+                    <cqcf:bcr_sample_uuid cde="" xsd_ver="2.3" procurement_status="Completed" owner="">5f9a1c1a-b228-4da6-b906-73b4abf47b47</cqcf:bcr_sample_uuid>
+                    <cqcf:normal_control_type cde="3081936" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+                    <cqcf:method_of_normal_sample_procurement cde="3288147" xsd_ver="2.5" procurement_status="Completed" owner="">Other Method (please specify)</cqcf:method_of_normal_sample_procurement>
+                    <cqcf:days_to_normal_sample_procurement precision="day" cde="3288496" xsd_ver="2.5" procurement_status="Completed" owner="">28</cqcf:days_to_normal_sample_procurement>
+                </cqcf:normal_control>
+            </cqcf:normal_controls>
+            <cqcf:days_to_pathology_review precision="day" cde="3288497" xsd_ver="2.5" procurement_status="Completed" owner="">32</cqcf:days_to_pathology_review>
+            <cqcf:path_confirm_tumor_nuclei_metrics cde="3288520" xsd_ver="2.5" procurement_status="Completed" owner="">YES</cqcf:path_confirm_tumor_nuclei_metrics>
+            <cqcf:path_confirm_tumor_necrosis_metrics cde="3288524" xsd_ver="2.5" procurement_status="Completed" owner="">YES</cqcf:path_confirm_tumor_necrosis_metrics>
+            <cqcf:path_confirm_report_attached cde="3288292" xsd_ver="2.5" procurement_status="Completed" owner="">YES</cqcf:path_confirm_report_attached>
+            <cqcf:path_confirm_diagnosis_matching cde="3288300" xsd_ver="1.8" procurement_status="Completed" owner="">YES</cqcf:path_confirm_diagnosis_matching>
+            <cqcf:reason_path_confirm_diagnosis_not_matching cde="3288315" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:cytogenetic_report_submitted cde="" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:differential_report_submitted cde="" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:hiv_positive_status cde="2180464" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:total_cells_submitted cde="" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <cqcf:percent_myeloblasts_for_submitted_specimen cde="" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <shared:race cde="2192199" xsd_ver="1.8" procurement_status="Not Available" owner=""/>
+            <shared:ethnicity cde="2192217" xsd_ver="1.9" procurement_status="Not Available" owner=""/>
+            <shared:histological_type cde="3081934" xsd_ver="2.5" procurement_status="Completed" owner="">Lung Adenocarcinoma- Not Otherwise Specified (NOS)</shared:histological_type>
+            <shared:histological_type_other cde="3124492" xsd_ver="2.5" procurement_status="Not Available" owner=""/>
+            <shared:history_of_neoadjuvant_treatment cde="3382737" xsd_ver="2.4" procurement_status="Completed" owner="">No</shared:history_of_neoadjuvant_treatment>
+            <cqcf:consent_or_death_status cde="3288361" xsd_ver="2.5" procurement_status="Completed" owner="">Consented</cqcf:consent_or_death_status>
+        </cqcf:biospecimen_cqcf>
+    </bio:patient>
+</bio:tcga_bcr>

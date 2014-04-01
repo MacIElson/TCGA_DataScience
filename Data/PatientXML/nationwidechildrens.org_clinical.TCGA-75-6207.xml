@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><luad:tcga_bcr xmlns:luad="http://tcga.nci/bcr/xml/clinical/luad/2.6" xmlns:admin="http://tcga.nci/bcr/xml/administration/2.6" xmlns:cqcf="http://tcga.nci/bcr/xml/clinical/cqcf/2.6" xmlns:follow_up_v1.0="http://tcga.nci/bcr/xml/clinical/luad/followup/2.6/1.0" xmlns:luad_nte="http://tcga.nci/bcr/xml/clinical/luad/shared/new_tumor_event/2.6/1.0" xmlns:lusc_luad_shared="http://tcga.nci/bcr/xml/clinical/shared/lusc_luad/2.6" xmlns:nte="http://tcga.nci/bcr/xml/clinical/shared/new_tumor_event/2.6" xmlns:rad="http://tcga.nci/bcr/xml/clinical/radiation/2.6" xmlns:rx="http://tcga.nci/bcr/xml/clinical/pharmaceutical/2.6" xmlns:shared="http://tcga.nci/bcr/xml/clinical/shared/2.6" xmlns:shared_stage="http://tcga.nci/bcr/xml/clinical/shared/stage/2.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="2.6" xsi:schemaLocation="http://tcga.nci/bcr/xml/clinical/luad/2.6 http://tcga-data.nci.nih.gov/docs/xsd/BCR/tcga.nci/bcr/xml/clinical/luad/2.6/TCGA_BCR.LUAD_Clinical.xsd">
+    <admin:admin>
+        <admin:bcr xsd_ver="1.17">Nationwide Children's Hospital</admin:bcr>
+        <admin:batch_number xsd_ver="1.17">119.33.0</admin:batch_number>
+        <admin:disease_code xsd_ver="2.3">LUAD</admin:disease_code>
+        <admin:day_of_dcc_upload xsd_ver="1.17">5</admin:day_of_dcc_upload>
+        <admin:month_of_dcc_upload xsd_ver="1.17">12</admin:month_of_dcc_upload>
+        <admin:year_of_dcc_upload xsd_ver="1.17">2013</admin:year_of_dcc_upload>
+        <admin:patient_withdrawal>
+            <admin:withdrawn>false</admin:withdrawn>
+        </admin:patient_withdrawal>
+    </admin:admin>
+    <luad:patient>
+        <shared:tumor_tissue_site cde="3427536" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" source_system_identifier="1164197" tier="2" xsd_ver="2.6">Lung</shared:tumor_tissue_site>
+        <shared:histological_type cde="3081934" display_order="6" owner="TSS" preferred_name="histologic_diagnosis" procurement_status="Completed" restricted="false" source_system_identifier="1164199" tier="1" xsd_ver="2.5">Lung Adenocarcinoma- Not Otherwise Specified (NOS)</shared:histological_type>
+        <shared:prior_dx cde="3382736" display_order="10" owner="TSS" preferred_name="history_other_malignancy" procurement_status="Completed" restricted="false" source_system_identifier="1164208" tier="2" xsd_ver="2.5">No</shared:prior_dx>
+        <shared:gender cde="2200604" display_order="4" owner="TSS" preferred_name="gender" procurement_status="Completed" restricted="false" source_system_identifier="1164202" tier="2" xsd_ver="1.8">MALE</shared:gender>
+        <shared:vital_status cde="5" display_order="30" owner="TSS" preferred_name="vital_status" procurement_status="Completed" restricted="false" source_system_identifier="1164227" tier="2" xsd_ver="2.6">Dead</shared:vital_status>
+        <shared:days_to_birth cde="" owner="TSS" procurement_status="Not Available" tier="2" xsd_ver="1.16"/>
+        <shared:days_to_last_known_alive cde="" owner="TSS" procurement_status="Not Available" tier="2" xsd_ver="2.1"/>
+        <shared:days_to_death cde="" owner="TSS" procurement_status="Not Available" tier="1" xsd_ver="1.16"/>
+        <shared:days_to_last_followup cde="" owner="TSS" procurement_status="Not Available" tier="1" xsd_ver="1.16"/>
+        <shared:race cde="2192199" display_order="8" owner="TSS" preferred_name="race" procurement_status="Not Available" restricted="false" source_system_identifier="1164206" tier="2" xsd_ver="1.8"/>
+        <shared:bcr_patient_barcode cde="2673794" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" xsd_ver="1.8">TCGA-75-6207</shared:bcr_patient_barcode>
+        <shared:tissue_source_site cde="" owner="TSS" procurement_status="Completed" restricted="false" xsd_ver="2.4">75</shared:tissue_source_site>
+        <shared:patient_id cde="" owner="TSS" procurement_status="Completed" restricted="false" xsd_ver="2.4">6207</shared:patient_id>
+        <shared:bcr_patient_uuid cde="" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" xsd_ver="2.3">58babefe-7e81-4594-ba29-50d1de92a5ab</shared:bcr_patient_uuid>
+        <shared:history_of_neoadjuvant_treatment cde="3382737" display_order="20" owner="TSS" preferred_name="history_neoadjuvant_treatment" procurement_status="Completed" restricted="false" source_system_identifier="1164212" tier="1" xsd_ver="2.4">No</shared:history_of_neoadjuvant_treatment>
+        <shared:informed_consent_verified cde="2714689" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" tier="2" xsd_ver="2.4">YES</shared:informed_consent_verified>
+        <shared:icd_o_3_site cde="3226281" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" tier="2" xsd_ver="2.4">C34.9</shared:icd_o_3_site>
+        <shared:icd_o_3_histology cde="3226275" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" tier="2" xsd_ver="2.4">8140/3</shared:icd_o_3_histology>
+        <shared:icd_10 cde="3226287" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" tier="2" xsd_ver="2.4">C34.11</shared:icd_10>
+        <shared:tissue_prospective_collection_indicator cde="3088492" display_order="2" owner="TSS" preferred_name="prospective_collection" procurement_status="Completed" restricted="false" source_system_identifier="1164242" tier="2" xsd_ver="2.3">NO</shared:tissue_prospective_collection_indicator>
+        <shared:tissue_retrospective_collection_indicator cde="3088528" display_order="3" owner="TSS" preferred_name="retrospective_collection" procurement_status="Completed" restricted="false" source_system_identifier="1164243" tier="2" xsd_ver="2.3">YES</shared:tissue_retrospective_collection_indicator>
+        <shared:days_to_initial_pathologic_diagnosis cde="" owner="TSS" procurement_status="Completed" tier="1" xsd_ver="1.16"/>
+        <shared:age_at_initial_pathologic_diagnosis cde="" owner="TSS" procurement_status="Not Available" tier="2" xsd_ver="1.16"/>
+        <shared:year_of_initial_pathologic_diagnosis cde="2896960" display_order="23" owner="TSS" preferred_name="initial_pathologic_dx_year" procurement_status="Completed" restricted="true" source_system_identifier="1164211" tier="1" xsd_ver="1.12">2007</shared:year_of_initial_pathologic_diagnosis>
+        <shared:ethnicity cde="2192217" display_order="9" owner="TSS" preferred_name="ethnicity" procurement_status="Not Available" restricted="false" source_system_identifier="1164207" tier="2" xsd_ver="1.9"/>
+        <shared:person_neoplasm_cancer_status cde="2759550" display_order="39" owner="TSS" preferred_name="tumor_status" procurement_status="Not Available" restricted="false" source_system_identifier="1164234" tier="2" xsd_ver="1.9"/>
+        <shared:performance_status_scale_timing cde="2792763" display_order="60" owner="TSS" preferred_name="performance_status_timing" procurement_status="Not Available" restricted="false" source_system_identifier="1164237" tier="2" xsd_ver="1.9"/>
+        <shared:day_of_form_completion cde="2975716" display_order="999" owner="TSS" preferred_name="form_completion_day" procurement_status="Completed" restricted="true" source_system_identifier="1164153" tier="2" xsd_ver="2.2">21</shared:day_of_form_completion>
+        <shared:month_of_form_completion cde="2975718" display_order="999" owner="TSS" preferred_name="form_completion_month" procurement_status="Completed" restricted="true" source_system_identifier="1164152" tier="2" xsd_ver="2.2">7</shared:month_of_form_completion>
+        <shared:year_of_form_completion cde="2975720" display_order="999" owner="TSS" preferred_name="form_completion_year" procurement_status="Completed" restricted="true" source_system_identifier="1164154" tier="2" xsd_ver="2.2">2011</shared:year_of_form_completion>
+        <shared_stage:stage_event system="AJCC">
+            <shared_stage:system_version cde="2722309" display_order="25" owner="TSS" preferred_name="ajcc_staging_edition" procurement_status="Completed" restricted="false" source_system_identifier="1164214" tier="1" xsd_ver="2.6">6th</shared_stage:system_version>
+            <shared_stage:clinical_stage cde="3440332" display_order="38" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+            <shared_stage:pathologic_stage cde="3203222" display_order="29" owner="TSS" preferred_name="ajcc_pathologic_tumor_stage" procurement_status="Completed" restricted="false" source_system_identifier="1164218" tier="2" xsd_ver="2.6">Stage IIIA</shared_stage:pathologic_stage>
+            <shared_stage:tnm_categories>
+                <shared_stage:clinical_categories>
+                    <shared_stage:clinical_T cde="3440328" display_order="35" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                    <shared_stage:clinical_N cde="3440330" display_order="36" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                    <shared_stage:clinical_M cde="3440331" display_order="37" owner="TSS" preferred_name="ajcc_metastasis_clinical_cM" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                </shared_stage:clinical_categories>
+                <shared_stage:pathologic_categories>
+                    <shared_stage:pathologic_T cde="3045435" display_order="26" owner="TSS" preferred_name="ajcc_tumor_pathologic_pT" procurement_status="Completed" restricted="false" source_system_identifier="1164215" tier="1" xsd_ver="2.6">T2</shared_stage:pathologic_T>
+                    <shared_stage:pathologic_N cde="3203106" display_order="27" owner="TSS" preferred_name="ajcc_nodes_pathologic_pN" procurement_status="Completed" restricted="false" source_system_identifier="1164216" tier="2" xsd_ver="2.6">N2</shared_stage:pathologic_N>
+                    <shared_stage:pathologic_M cde="3045439" display_order="28" owner="TSS" preferred_name="ajcc_metastasis_pathologic_pM" procurement_status="Completed" restricted="false" source_system_identifier="1164217" tier="1" xsd_ver="2.6">M0</shared_stage:pathologic_M>
+                </shared_stage:pathologic_categories>
+            </shared_stage:tnm_categories>
+            <shared_stage:psa>
+                <shared_stage:psa_value cde="3351903" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                <shared_stage:days_to_psa cde="" owner="TSS" procurement_status="Not Applicable" tier="2" xsd_ver="2.6"/>
+            </shared_stage:psa>
+            <shared_stage:gleason_grading>
+                <shared_stage:gleason_score cde="2534619" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                <shared_stage:primary_pattern cde="2534617" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                <shared_stage:secondary_pattern cde="2534618" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                <shared_stage:tertiary_pattern cde="2783875" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+            </shared_stage:gleason_grading>
+            <shared_stage:ann_arbor>
+                <shared_stage:b_symptoms cde="2902402" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+                <shared_stage:extranodal_involvement cde="3364582" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.6"/>
+            </shared_stage:ann_arbor>
+        </shared_stage:stage_event>
+        <shared:karnofsky_performance_score cde="2003853" display_order="16" owner="TSS" preferred_name="karnofsky_score" procurement_status="Not Available" restricted="false" source_system_identifier="1164235" tier="2" xsd_ver="1.8"/>
+        <shared:eastern_cancer_oncology_group cde="88" display_order="15" owner="TSS" preferred_name="ecog_score" procurement_status="Not Available" restricted="false" source_system_identifier="1164236" tier="2" xsd_ver="1.9"/>
+        <shared:tobacco_smoking_history cde="2181650" display_order="11" owner="TSS" preferred_name="tobacco_smoking_history_indicator" procurement_status="Completed" restricted="false" source_system_identifier="1164238" tier="2" xsd_ver="2.2">Current reformed smoker for &gt; 15 years</shared:tobacco_smoking_history>
+        <shared:year_of_tobacco_smoking_onset cde="2228604" display_order="12" owner="TSS" preferred_name="tobacco_smoking_year_started" procurement_status="Not Available" restricted="true" source_system_identifier="1164239" tier="2" xsd_ver="2.2"/>
+        <shared:stopped_smoking_year cde="2228610" display_order="13" owner="TSS" preferred_name="tobacco_smoking_year_stopped" procurement_status="Completed" restricted="false" source_system_identifier="1164240" tier="2" xsd_ver="2.5">1972</shared:stopped_smoking_year>
+        <shared:number_pack_years_smoked cde="2955385" display_order="14" owner="TSS" preferred_name="tobacco_smoking_pack_years_smoked" procurement_status="Completed" restricted="false" source_system_identifier="1164241" tier="2" xsd_ver="2.5">10</shared:number_pack_years_smoked>
+        <shared:anatomic_neoplasm_subdivision cde="3108203" display_order="19" owner="TSS" preferred_name="anatomic_organ_subdivision" procurement_status="Completed" restricted="false" source_system_identifier="1164200" tier="2" xsd_ver="2.6">R-Upper</shared:anatomic_neoplasm_subdivision>
+        <shared:anatomic_neoplasm_subdivision_other cde="2584114" display_order="4" owner="TSS" preferred_name="site_of_primary_tumor_other" procurement_status="Not Applicable" restricted="false" tier="2" xsd_ver="2.5" xsi:nil="true"/>
+        <lusc_luad_shared:diagnosis cde="3081932" display_order="5" owner="TSS" preferred_name="histologic_diagnosis" procurement_status="Completed" restricted="false" source_system_identifier="1164198" tier="1" xsd_ver="2.3">Lung Adenocarcinoma</lusc_luad_shared:diagnosis>
+        <lusc_luad_shared:location_in_lung_parenchyma cde="3139453" display_order="9" owner="TSS" preferred_name="location_lung_parenchyma" procurement_status="Completed" restricted="false" source_system_identifier="1164201" tier="2" xsd_ver="2.3">Peripheral Lung</lusc_luad_shared:location_in_lung_parenchyma>
+        <shared:residual_tumor cde="2608702" display_order="24" owner="TSS" preferred_name="residual_tumor" procurement_status="Completed" restricted="false" source_system_identifier="1164213" tier="2" xsd_ver="2.5">R0</shared:residual_tumor>
+        <lusc_luad_shared:kras_mutation_found cde="2932340" display_order="46" owner="TSS" preferred_name="kras_mutation_found" procurement_status="Not Available" restricted="false" source_system_identifier="1164220" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:kras_gene_analysis_performed cde="3123147" display_order="45" owner="TSS" preferred_name="kras_gene_analysis_indicator" procurement_status="Not Available" restricted="false" source_system_identifier="1164219" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:kras_mutation_result cde="3147614" display_order="47" owner="TSS" preferred_name="kras_mutation_identified_type" procurement_status="Not Available" restricted="false" source_system_identifier="1164221" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:egfr_mutation_performed cde="3139429" display_order="48" owner="TSS" preferred_name="egfr_mutation_status" procurement_status="Not Available" restricted="false" source_system_identifier="1164222" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:egfr_mutation_result cde="3147627" display_order="49" owner="TSS" preferred_name="egfr_mutation_identified_type" procurement_status="Not Available" restricted="false" source_system_identifier="1164223" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:eml4_alk_translocation_performed cde="3139437" display_order="50" owner="TSS" preferred_name="eml4_alk_translocation_status" procurement_status="Not Available" restricted="false" source_system_identifier="1164224" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:eml4_alk_translocation_result cde="3139445" display_order="51" owner="TSS" preferred_name="eml4_alk_translocation_variant" procurement_status="Not Available" restricted="false" source_system_identifier="1164225" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:eml4_alk_translocation_method cde="3139449" display_order="52" owner="TSS" preferred_name="eml4_alk_analysis_type" procurement_status="Not Available" restricted="false" source_system_identifier="1164226" tier="2" xsd_ver="2.3"/>
+        <lusc_luad_shared:pulmonary_function_test_performed cde="2556486" display_order="39" owner="TSS" preferred_name="pulmonary_function_test_indicator" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+        <lusc_luad_shared:pre_bronchodilator_fev1_percent cde="3302947" display_order="40" owner="TSS" preferred_name="fev1_percent_ref_prebroncholiator" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+        <lusc_luad_shared:post_bronchodilator_fev1_percent cde="3302948" display_order="41" owner="TSS" preferred_name="fev1_percent_ref_postbroncholiator" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+        <lusc_luad_shared:pre_bronchodilator_fev1_fvc_percent cde="3302955" display_order="42" owner="TSS" preferred_name="fev1_fvc_ratio_prebroncholiator" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+        <lusc_luad_shared:post_bronchodilator_fev1_fvc_percent cde="3302956" display_order="43" owner="TSS" preferred_name="fev1_fvc_ratio_postbroncholiator" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+        <lusc_luad_shared:dlco_predictive_percent cde="2180255" display_order="44" owner="TSS" preferred_name="carbon_monoxide_diffusion_dlco" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+        <shared:targeted_molecular_therapy cde="2785850" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="1.9"/>
+        <shared:radiation_therapy cde="2005312" display_order="54" owner="TSS" preferred_name="radiation_treatment_adjuvant" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="1.9"/>
+        <shared:primary_therapy_outcome_success cde="2786727" display_order="56" owner="TSS" preferred_name="treatment_outcome_first_course" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+        <luad_nte:new_tumor_events>
+            <nte:new_tumor_event_after_initial_treatment cde="3121376" display_order="64" owner="TSS" preferred_name="new_tumor_event_dx_indicator" procurement_status="Not Available" restricted="false" tier="1" xsd_ver="2.5"/>
+            <luad_nte:new_tumor_event>
+                <nte:days_to_new_tumor_event_after_initial_treatment cde="" owner="TSS" procurement_status="Not Available" tier="1" xsd_ver="2.2"/>
+                <luad_nte:new_neoplasm_event_types>
+                    <nte:new_neoplasm_event_type cde="3119721" display_order="69" owner="TSS" preferred_name="new_tumor_event_type" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+                </luad_nte:new_neoplasm_event_types>
+                <luad_nte:progression_determined_by_list>
+                    <nte:progression_determined_by cde="2786205" display_order="70" owner="TSS" preferred_name="new_tumor_event_dx_evidence" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="1.9"/>
+                </luad_nte:progression_determined_by_list>
+                <luad_nte:locoregional_procedure>
+                    <nte:additional_surgery_locoregional_procedure cde="3008755" display_order="71" owner="TSS" preferred_name="new_tumor_event_surgery" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.2"/>
+                    <nte:days_to_additional_surgery_locoregional_procedure cde="" owner="TSS" procurement_status="Not Available" tier="2" xsd_ver="2.2"/>
+                </luad_nte:locoregional_procedure>
+                <luad_nte:metastatic_procedure>
+                    <nte:additional_surgery_metastatic_procedure cde="3008757" display_order="76" owner="TSS" preferred_name="new_tumor_event_surgery_met" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.2"/>
+                    <nte:days_to_additional_surgery_metastatic_procedure cde="" owner="TSS" procurement_status="Not Available" tier="2" xsd_ver="2.2"/>
+                </luad_nte:metastatic_procedure>
+                <nte:additional_radiation_therapy cde="3427615" display_order="74" owner="TSS" preferred_name="new_tumor_event_radiation_tx" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+                <nte:additional_pharmaceutical_therapy cde="3427616" display_order="75" owner="TSS" preferred_name="new_tumor_event_pharmaceutical_tx" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+            </luad_nte:new_tumor_event>
+        </luad_nte:new_tumor_events>
+        <rx:drugs/>
+        <rad:radiations/>
+        <lusc_luad_shared:clinical_cqcf>
+            <shared:anatomic_neoplasm_subdivision cde="3108203" display_order="19" owner="TSS" preferred_name="anatomic_organ_subdivision" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.6"/>
+            <cqcf:history_of_prior_malignancy cde="3382736" display_order="10" owner="TSS" preferred_name="history_other_malignancy" procurement_status="Completed" restricted="false" tier="2" xsd_ver="2.5">No</cqcf:history_of_prior_malignancy>
+            <shared:history_of_neoadjuvant_treatment cde="3382737" display_order="20" owner="TSS" preferred_name="history_neoadjuvant_treatment" procurement_status="Completed" restricted="false" tier="1" xsd_ver="2.4">No</shared:history_of_neoadjuvant_treatment>
+            <cqcf:consent_or_death_status cde="3288361" display_order="73" owner="TSS" preferred_name="patient_consent_status" procurement_status="Completed" restricted="false" tier="1" xsd_ver="2.5">Consented</cqcf:consent_or_death_status>
+            <cqcf:days_to_consent cde="" owner="TSS" procurement_status="Completed" tier="1" xsd_ver="2.5"/>
+            <cqcf:diagnosis_subtype cde="2783887" display_order="9999" owner="TSS" preferred_name="" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+            <shared:prior_dx cde="3382736" display_order="10" owner="TSS" preferred_name="history_other_malignancy" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+            <cqcf:normal_tissue_anatomic_site cde="3081938" display_order="58" owner="TSS" preferred_name="normal_control_tissue_site" procurement_status="Not Available" restricted="false" tier="1" xsd_ver="2.5"/>
+            <cqcf:normal_tissue_proximity cde="3088708" display_order="60" owner="TSS" preferred_name="normal_control_proximity_to_tumor" procurement_status="Not Available" restricted="false" tier="1" xsd_ver="2.5"/>
+            <cqcf:tumor_type cde="3288124" display_order="5" owner="TSS" preferred_name="tumor_sample_type" procurement_status="Completed" restricted="false" tier="1" xsd_ver="2.5">Primary</cqcf:tumor_type>
+            <shared:histological_type cde="3081934" display_order="6" owner="TSS" preferred_name="histologic_diagnosis" procurement_status="Completed" restricted="false" tier="1" xsd_ver="2.5">Lung Adenocarcinoma- Not Otherwise Specified (NOS)</shared:histological_type>
+            <cqcf:other_anatomic_site cde="3320289" display_order="7" owner="TSS" preferred_name="site_of_primary_tumor_other" procurement_status="Completed" restricted="false" tier="1" xsd_ver="2.5">Right lung NOS</cqcf:other_anatomic_site>
+            <cqcf:other_anatomic_site_normal_tissue cde="3288189" display_order="59" owner="TSS" preferred_name="normal_control_site_other" procurement_status="Not Available" restricted="false" tier="1" xsd_ver="2.5"/>
+            <cqcf:country cde="3203072" display_order="14" owner="TSS" preferred_name="tumor_sample_procurement_country" procurement_status="Completed" restricted="false" tier="1" xsd_ver="2.5">Canada</cqcf:country>
+        </lusc_luad_shared:clinical_cqcf>
+        <luad:follow_ups>
+            <follow_up_v1.0:follow_up sequence="1" version="1.0">
+                <shared:bcr_followup_barcode cde="" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" xsd_ver="2.5">TCGA-75-6207-F15092</shared:bcr_followup_barcode>
+                <shared:bcr_followup_uuid cde="" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" xsd_ver="2.5">53c4832a-9167-41ab-8172-0713906b893e</shared:bcr_followup_uuid>
+                <shared:lost_follow_up cde="61333" display_order="5" owner="TSS" preferred_name="followup_lost_to" procurement_status="Not Available" restricted="false" tier="1" xsd_ver="2.5"/>
+                <shared:vital_status cde="5" display_order="30" owner="TSS" preferred_name="vital_status" procurement_status="Completed" restricted="false" source_system_identifier="1164292" tier="2" xsd_ver="2.6">Dead</shared:vital_status>
+                <shared:primary_therapy_outcome_success cde="2786727" display_order="56" owner="TSS" preferred_name="treatment_outcome_first_course" procurement_status="Completed" restricted="false" source_system_identifier="1164291" tier="2" xsd_ver="2.5">Complete Remission/Response</shared:primary_therapy_outcome_success>
+                <shared:days_to_last_followup cde="" owner="TSS" procurement_status="Not Available" tier="1" xsd_ver="1.16"/>
+                <shared:days_to_death cde="" owner="TSS" procurement_status="Not Available" tier="1" xsd_ver="1.16"/>
+                <nte:new_tumor_event_after_initial_treatment cde="3121376" display_order="64" owner="TSS" preferred_name="new_tumor_event_dx_indicator" procurement_status="Not Available" restricted="false" source_system_identifier="1164315" tier="1" xsd_ver="2.5"/>
+                <nte:days_to_new_tumor_event_after_initial_treatment cde="" owner="TSS" procurement_status="Not Available" tier="1" xsd_ver="2.2"/>
+                <luad_nte:new_neoplasm_event_types>
+                    <nte:new_neoplasm_event_type cde="3119721" display_order="69" owner="TSS" preferred_name="new_tumor_event_type" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="2.5"/>
+                </luad_nte:new_neoplasm_event_types>
+                <luad_nte:progression_determined_by_list>
+                    <nte:progression_determined_by cde="2786205" display_order="70" owner="TSS" preferred_name="new_tumor_event_dx_evidence" procurement_status="Not Available" restricted="false" tier="2" xsd_ver="1.9"/>
+                </luad_nte:progression_determined_by_list>
+                <nte:additional_surgery_locoregional_procedure cde="3008755" display_order="71" owner="TSS" preferred_name="new_tumor_event_surgery" procurement_status="Not Available" restricted="false" source_system_identifier="1164316" tier="2" xsd_ver="2.2"/>
+                <nte:days_to_additional_surgery_locoregional_procedure cde="" owner="TSS" procurement_status="Not Available" tier="2" xsd_ver="2.2"/>
+                <shared:person_neoplasm_cancer_status cde="2759550" display_order="39" owner="TSS" preferred_name="tumor_status" procurement_status="Not Available" restricted="false" source_system_identifier="1164299" tier="2" xsd_ver="1.9"/>
+                <shared:radiation_therapy cde="2005312" display_order="54" owner="TSS" preferred_name="radiation_treatment_adjuvant" procurement_status="Completed" restricted="false" source_system_identifier="1164289" tier="2" xsd_ver="1.9">NO</shared:radiation_therapy>
+                <shared:additional_radiation_therapy cde="3008761" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" source_system_identifier="1164303" tier="2" xsd_ver="2.2">NO</shared:additional_radiation_therapy>
+                <shared:targeted_molecular_therapy cde="2785850" display_order="9999" owner="TSS" preferred_name="" procurement_status="Completed" restricted="false" source_system_identifier="1164290" tier="2" xsd_ver="1.9">NO</shared:targeted_molecular_therapy>
+                <shared:additional_pharmaceutical_therapy cde="3427616" display_order="75" owner="TSS" preferred_name="new_tumor_event_pharmaceutical_tx" procurement_status="Completed" restricted="false" source_system_identifier="1164304" tier="2" xsd_ver="2.2">NO</shared:additional_pharmaceutical_therapy>
+                <nte:additional_surgery_metastatic_procedure cde="3008757" display_order="76" owner="TSS" preferred_name="new_tumor_event_surgery_met" procurement_status="Not Available" restricted="false" source_system_identifier="1164317" tier="2" xsd_ver="2.2"/>
+                <nte:days_to_additional_surgery_metastatic_procedure cde="" owner="TSS" procurement_status="Not Available" tier="2" xsd_ver="2.2"/>
+                <shared:day_of_form_completion cde="2975716" display_order="999" owner="TSS" preferred_name="form_completion_day" procurement_status="Completed" restricted="true" source_system_identifier="1164286" tier="2" xsd_ver="2.2">21</shared:day_of_form_completion>
+                <shared:month_of_form_completion cde="2975718" display_order="999" owner="TSS" preferred_name="form_completion_month" procurement_status="Completed" restricted="true" source_system_identifier="1164285" tier="2" xsd_ver="2.2">7</shared:month_of_form_completion>
+                <shared:year_of_form_completion cde="2975720" display_order="999" owner="TSS" preferred_name="form_completion_year" procurement_status="Completed" restricted="true" source_system_identifier="1164287" tier="2" xsd_ver="2.2">2011</shared:year_of_form_completion>
+                <shared:followup_case_report_form_submission_reason cde="3233305" display_order="4" owner="TSS" preferred_name="followup_reason" procurement_status="Not Available" restricted="false" source_system_identifier="1164288" tier="2" xsd_ver="2.5"/>
+                <shared:followup_treatment_success cde="3104050" display_order="41" owner="TSS" preferred_name="treatment_outcome_at_tcga_followup" procurement_status="Not Available" restricted="false" source_system_identifier="1164305" tier="1" xsd_ver="2.5"/>
+                <shared:karnofsky_performance_score cde="2003853" display_order="16" owner="TSS" preferred_name="karnofsky_score" procurement_status="Not Available" restricted="false" source_system_identifier="1164300" tier="2" xsd_ver="1.8"/>
+                <shared:eastern_cancer_oncology_group cde="88" display_order="15" owner="TSS" preferred_name="ecog_score" procurement_status="Not Available" restricted="false" source_system_identifier="1164301" tier="2" xsd_ver="1.9"/>
+                <shared:performance_status_scale_timing cde="2792763" display_order="60" owner="TSS" preferred_name="performance_status_timing" procurement_status="Not Available" restricted="false" source_system_identifier="1164302" tier="2" xsd_ver="1.9"/>
+            </follow_up_v1.0:follow_up>
+        </luad:follow_ups>
+    </luad:patient>
+</luad:tcga_bcr>
