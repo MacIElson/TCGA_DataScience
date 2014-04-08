@@ -15,7 +15,6 @@ luad:patient
 	shared:ethnicity
 	shared:person_neoplasm_cancer_status
 	shared_stage:stage_event
-		shared_stage:clinical_stage cde="3440332"
 		shared_stage:pathologic_stage cde="3203222"
 		shared_stage:tnm_categories
 			shared_stage:clinical_categories
@@ -37,4 +36,3 @@ luad:patient
 		nte:new_tumor_event_after_initial_treatment
 		luad_nte:new_tumor_event
 			nte:days_to_new_tumor_event_after_initial_treatment
-			

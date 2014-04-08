@@ -14,11 +14,45 @@ class Patient:
     def addBioSpecimenRootElement(self, biospecimenRootElement):
     	self.biospecimenRootElement = biospecimenRootElement
 
-    def getbcr_patient_barcode(self):
+    def getBcr_patient_barcode(self):
     	return self.patientRootElement.find('luad:patient/shared:bcr_patient_barcode' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getPrior_dx(self):
+    	prior_dx = self.patientRootElement.find('luad:patient/shared:prior_dx' , namespaces=getPatientXMLNameSpaces()).text
+    	if prior_dx == "Yes, History of Prior Malignancy":
+    		prior_dx = "Yes"
+    	return prior_dx
+
 
     def getGender(self):
     	return self.patientRootElement.find('luad:patient/shared:gender' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getDays_to_birth(self):
+    	return self.patientRootElement.find('luad:patient/shared:days_to_birth' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getDays_to_last_known_alive(self):
+    	return self.patientRootElement.find('luad:patient/shared:days_to_last_known_alive' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getDays_to_death(self):
+    	return self.patientRootElement.find('luad:patient/shared:days_to_death' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getRace(self):
+    	return self.patientRootElement.find('luad:patient/shared:race' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getDays_to_initial_pathologic_diagnosis(self):
+    	return self.patientRootElement.find('luad:patient/shared:days_to_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getAge_at_initial_pathologic_diagnosis(self):
+    	return self.patientRootElement.find('luad:patient/shared:age_at_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getYear_of_initial_pathologic_diagnosis(self):
+    	return self.patientRootElement.find('luad:patient/shared:year_of_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getEthnicity(self):
+    	return self.patientRootElement.find('luad:patient/shared:ethnicity' , namespaces=getPatientXMLNameSpaces()).text
+
+    def getPathologic_stage(self):
+    	return self.patientRootElement.find('luad:patient/shared_stage:stage_event/shared_stage:pathologic_stage' , namespaces=getPatientXMLNameSpaces()).text
 
     def addMutation(self, mutation):
     	self.mutations.append(mutation)
@@ -128,7 +162,7 @@ def getListOfPatientObjects():
 	PatientList = []
 	for PatientXML in getPatientsWithDrugsXMLTrees():
 		patient = Patient(PatientXML)
-		patient.addBioSpecimenRootElement(getBiospecimenRootElement(patient.getbcr_patient_barcode()))
+		patient.addBioSpecimenRootElement(getBiospecimenRootElement(patient.getBcr_patient_barcode()))
 		PatientList.append(patient)
 	return PatientList
 
@@ -137,7 +171,7 @@ def getDictionaryOfPatients():
 	patientDict = {}
 	patientList = getListOfPatientObjects()
 	for patient in patientList:
-		patientDict[patient.getbcr_patient_barcode()] = patient
+		patientDict[patient.getBcr_patient_barcode()] = patient
 	return patientDict
 
 class Mutation:
