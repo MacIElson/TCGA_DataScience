@@ -15,5 +15,26 @@ luad:patient
 	shared:ethnicity
 	shared:person_neoplasm_cancer_status
 	shared_stage:stage_event
-		shared_stage:clinical_stage
-		shared_stage:pathologic_stage
+		shared_stage:clinical_stage cde="3440332"
+		shared_stage:pathologic_stage cde="3203222"
+		shared_stage:tnm_categories
+			shared_stage:clinical_categories
+				shared_stage:clinical_T cde="3440328"
+				shared_stage:clinical_N cde="3440330"
+				shared_stage:clinical_M cde="3440331"
+			shared_stage:pathologic_categories
+				shared_stage:pathologic_T cde="3045435"
+				shared_stage:pathologic_N cde="3203106"
+				shared_stage:pathologic_M cde="3045439"
+	shared:karnofsky_performance_score cde="2003853"
+	shared:tobacco_smoking_history cde="2181650"
+	shared:year_of_tobacco_smoking_onset
+	shared:stopped_smoking_year
+	shared:number_pack_years_smoked cde="2955385"
+	lusc_luad_shared:kras_mutation_found cde="2932340"
+	lusc_luad_shared:kras_mutation_result cde="3147614"
+	luad_nte:new_tumor_events
+		nte:new_tumor_event_after_initial_treatment
+		luad_nte:new_tumor_event
+			nte:days_to_new_tumor_event_after_initial_treatment
+			
