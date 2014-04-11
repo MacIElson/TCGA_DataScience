@@ -5,60 +5,134 @@ import csv
 import xml.etree.ElementTree as ET
 
 class Patient:
-    """A class for a Single Patient"""
-    mutations = []
+	"""A class for a Single Patient"""
+	mutations = []
+	compwt=float
+	sei=float
+	masei=float
+	pasei=float
 
-    def __init__(self, patientRootElement):
-        self.patientRootElement = patientRootElement
+	def __init__(self, patientRootElement):
+		self.patientRootElement = patientRootElement
 
-    def addBioSpecimenRootElement(self, biospecimenRootElement):
-    	self.biospecimenRootElement = biospecimenRootElement
+	def addBioSpecimenRootElement(self, biospecimenRootElement):
+		self.biospecimenRootElement = biospecimenRootElement
 
-    def getBcr_patient_barcode(self):
-    	return self.patientRootElement.find('luad:patient/shared:bcr_patient_barcode' , namespaces=getPatientXMLNameSpaces()).text
+	def getBcr_patient_barcode(self):
+		self.caseid = self.patientRootElement.find('luad:patient/shared:bcr_patient_barcode' , namespaces=getPatientXMLNameSpaces()).text
+		return self.caseid
 
-    def getPrior_dx(self):
-    	prior_dx = self.patientRootElement.find('luad:patient/shared:prior_dx' , namespaces=getPatientXMLNameSpaces()).text
-    	if prior_dx == "Yes, History of Prior Malignancy":
-    		prior_dx = "Yes"
-    	return prior_dx
+	def getPrior_dx(self):
+		prior_dx = self.patientRootElement.find('luad:patient/shared:prior_dx' , namespaces=getPatientXMLNameSpaces()).text
+		if prior_dx == "Yes, History of Prior Malignancy":
+			prior_dx = "Yes"
+		return prior_dx
 
+	def getPrimary_therapy_outcome_success(self):
+		primary_therapy_outcome_success = self.patientRootElement.find('luad:patient/shared:primary_therapy_outcome_success' , namespaces=getPatientXMLNameSpaces())
+		if primary_therapy_outcome_success != None:
+			return primary_therapy_outcome_success.text
+		else:
+			return "Unknown"
 
-    def getGender(self):
-    	return self.patientRootElement.find('luad:patient/shared:gender' , namespaces=getPatientXMLNameSpaces()).text
+	def getGender(self):
+		return self.patientRootElement.find('luad:patient/shared:gender' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getDays_to_birth(self):
-    	return self.patientRootElement.find('luad:patient/shared:days_to_birth' , namespaces=getPatientXMLNameSpaces()).text
+	def getGenderClean(self):
+		gender = self.getGender()
+		if gender == "FEMALE":
+			return 0
+		elif gender == "MALE":
+			return 1
+		else:
+			return "Unknown"
 
-    def getDays_to_last_known_alive(self):
-    	return self.patientRootElement.find('luad:patient/shared:days_to_last_known_alive' , namespaces=getPatientXMLNameSpaces()).text
+	def getVital_status(self):
+		return self.patientRootElement.find('luad:patient/shared:vital_status' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getDays_to_death(self):
-    	return self.patientRootElement.find('luad:patient/shared:days_to_death' , namespaces=getPatientXMLNameSpaces()).text
+	def getVital_statusClean(self):
+		status = self.getVital_status()
+		if status == "Dead":
+			return 0
+		elif status == "Alive" or status == "LIVING":
+			return 1
+		else:
+			return "Unknown"
 
-    def getRace(self):
-    	return self.patientRootElement.find('luad:patient/shared:race' , namespaces=getPatientXMLNameSpaces()).text
+	def getDays_to_birth(self):
+		return self.patientRootElement.find('luad:patient/shared:days_to_birth' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getDays_to_initial_pathologic_diagnosis(self):
-    	return self.patientRootElement.find('luad:patient/shared:days_to_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
+	def getDays_to_last_known_alive(self):
+		return self.patientRootElement.find('luad:patient/shared:days_to_last_known_alive' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getAge_at_initial_pathologic_diagnosis(self):
-    	return self.patientRootElement.find('luad:patient/shared:age_at_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
+	def getDays_to_death(self):
+		return self.patientRootElement.find('luad:patient/shared:days_to_death' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getYear_of_initial_pathologic_diagnosis(self):
-    	return self.patientRootElement.find('luad:patient/shared:year_of_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
+	def getRace(self):
+		return self.patientRootElement.find('luad:patient/shared:race' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getEthnicity(self):
-    	return self.patientRootElement.find('luad:patient/shared:ethnicity' , namespaces=getPatientXMLNameSpaces()).text
+	def getDays_to_initial_pathologic_diagnosis(self):
+		return self.patientRootElement.find('luad:patient/shared:days_to_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getPathologic_stage(self):
-    	return self.patientRootElement.find('luad:patient/shared_stage:stage_event/shared_stage:pathologic_stage' , namespaces=getPatientXMLNameSpaces()).text
+	def getAge_at_initial_pathologic_diagnosis(self):
+		return self.patientRootElement.find('luad:patient/shared:age_at_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
 
-    def addMutation(self, mutation):
-    	self.mutations.append(mutation)
+	def getYear_of_initial_pathologic_diagnosis(self):
+		return self.patientRootElement.find('luad:patient/shared:year_of_initial_pathologic_diagnosis' , namespaces=getPatientXMLNameSpaces()).text
 
-    def getAllMutations(self):
-    	return mutations
+	def getEthnicity(self):
+		return self.patientRootElement.find('luad:patient/shared:ethnicity' , namespaces=getPatientXMLNameSpaces()).text
+
+	def getPathologic_stage(self):
+		return self.patientRootElement.find('luad:patient/shared_stage:stage_event/shared_stage:pathologic_stage' , namespaces=getPatientXMLNameSpaces()).text
+
+	def getPathologic_stageClean(self):
+		stage = self.getPathologic_stage()
+		if stage == "Stage IA":
+			return 1
+		elif stage == "Stage IB":
+			return 2
+		elif stage == "Stage IIA":
+			return 3
+		elif stage == "Stage IIB":
+			return 4
+		elif stage == "Stage IIIA":
+			return 5
+		elif stage == "Stage IIIB":
+			return 6
+		elif stage == "Stage IV":
+			return 7
+		else:
+			return "Unknown"
+
+	def getNumber_pack_years_smoked(self):
+		return self.patientRootElement.find('luad:patient/shared:number_pack_years_smoked' , namespaces=getPatientXMLNameSpaces()).text
+
+	def getTobacco_smoking_history(self):
+		return self.patientRootElement.find('luad:patient/shared:tobacco_smoking_history' , namespaces=getPatientXMLNameSpaces()).text
+
+	def assignVariablesToSelf(self):
+		self.caseid = self.getBcr_patient_barcode()
+		self.vital_status = self.getVital_statusClean()
+		self.gender = self.getGenderClean()
+		self.pathologic_stage = self.getPathologic_stageClean()
+
+	def is_complete(self, attrs):
+		"""Checks whether a respondent has all required variables.
+
+		attrs: list of attributes
+
+		Returns: boolean
+		"""
+		t = [getattr(self, attr) for attr in attrs]
+		complete = ('Unknown' not in t)
+		return complete
+
+	def addMutation(self, mutation):
+		self.mutations.append(mutation)
+
+	def getAllMutations(self):
+		return mutations
 
 def findPatientFiles(location = os.path.abspath("Data/PatientXML")):
 	"takes the location of the clinical xml files"
@@ -171,13 +245,14 @@ def getDictionaryOfPatients():
 	patientDict = {}
 	patientList = getListOfPatientObjects()
 	for patient in patientList:
+		patient.assignVariablesToSelf()
 		patientDict[patient.getBcr_patient_barcode()] = patient
 	return patientDict
 
 class Mutation:
-    """A class for a Single Mutation"""
-    def __init__(self, mutationRow):
-        self.mutationRow = mutationRow
+	"""A class for a Single Mutation"""
+	def __init__(self, mutationRow):
+		self.mutationRow = mutationRow
 
 def getListofMutations():
 	"""get a List of Mutations for patients that have drug data"""
@@ -186,9 +261,9 @@ def getListofMutations():
 	patientBarcodeList = getPatientWithDrugBarcodes()
 	mutationList = []
 	for row in reader:
-	    if row[15][0:12] in patientBarcodeList:
-	    	mutation = Mutation(row)
-	    	mutationList.append(mutation)
+		if row[15][0:12] in patientBarcodeList:
+			mutation = Mutation(row)
+			mutationList.append(mutation)
 
 def getListofPatients():
 	"""returns a list of Patients that have drug information, their patient xml tree, biospecimen xml tree and a list of mutations"""
@@ -198,7 +273,20 @@ def getListofPatients():
 	patientDict = getDictionaryOfPatients()
 	mutationList = []
 	for row in reader:
-	    if row[15][0:12] in patientBarcodeList:
-	    	mutation = Mutation(row)
-	    	patientDict[row[15][0:12]].addMutation(mutation)
+		if row[15][0:12] in patientBarcodeList:
+			mutation = Mutation(row)
+			patientDict[row[15][0:12]].addMutation(mutation)
 	return patientDict.values()
+
+def getDictReadofPatients():
+	"""returns a dict of Patients that have drug information, their patient xml tree, biospecimen xml tree and a list of mutations"""
+	ifile  = open(os.path.abspath("Data/broad.mit.edu__Illumina_Genome_Analyzer_DNA_Sequencing_level2.csv"), "rb")
+	reader = csv.reader(ifile, delimiter='	')
+	patientBarcodeList = getPatientWithDrugBarcodes()
+	patientDict = getDictionaryOfPatients()
+	mutationList = []
+	for row in reader:
+		if row[15][0:12] in patientBarcodeList:
+			mutation = Mutation(row)
+			patientDict[row[15][0:12]].addMutation(mutation)
+	return patientDict

@@ -5,7 +5,7 @@ def getSummaryGender(patientList=None):
 		patientList = DataUtilities.getListofPatients()
 	dataDict = {}
 	for patient in patientList:
-		data = patient. getGender()
+		data = patient.getGender()
 		if data == None:
 			data = "Unknown"
 		if data in dataDict.keys():
@@ -90,6 +90,78 @@ def getSummaryPathologic_stage(patientList=None):
 	print ""
 	return dataDict
 
+def getSummaryNumber_pack_years_smoked(patientList=None):
+	if patientList is None:
+		patientList = DataUtilities.getListofPatients()
+	dataDict = {}
+	for patient in patientList:
+		data = patient.getNumber_pack_years_smoked()
+		if data == None:
+			data = "Unknown"
+		if data in dataDict.keys():
+			dataDict[data] += 1
+		else:
+			dataDict[data] = 1
+	print "Number_pack_years_smoked Breakdown"
+	for key, value in dataDict.iteritems():
+		print key + ": " + str(value)
+	print ""
+	return dataDict
+
+def getSummaryTobacco_smoking_history(patientList=None):
+	if patientList is None:
+		patientList = DataUtilities.getListofPatients()
+	dataDict = {}
+	for patient in patientList:
+		data = patient.getTobacco_smoking_history()
+		if data == None:
+			data = "Unknown"
+		if data in dataDict.keys():
+			dataDict[data] += 1
+		else:
+			dataDict[data] = 1
+	print "getTobacco_smoking_history Breakdown"
+	for key, value in dataDict.iteritems():
+		print key + ": " + str(value)
+	print ""
+	return dataDict
+
+def getSummaryPrimary_therapy_outcome_success(patientList=None):
+	if patientList is None:
+		patientList = DataUtilities.getListofPatients()
+	dataDict = {}
+	for patient in patientList:
+		data = patient.getPrimary_therapy_outcome_success()
+		if data == None:
+			data = "Unknown"
+		if data in dataDict.keys():
+			dataDict[data] += 1
+		else:
+			dataDict[data] = 1
+	print "Primary_therapy_outcome_success Breakdown"
+	for key, value in dataDict.iteritems():
+		print key + ": " + str(value)
+	print ""
+	return dataDict
+
+def getSummaryVital_status(patientList=None):
+	if patientList is None:
+		patientList = DataUtilities.getListofPatients()
+	dataDict = {}
+	for patient in patientList:
+		data = patient.getVital_status()
+		if data == None:
+			data = "Unknown"
+		if data in dataDict.keys():
+			dataDict[data] += 1
+		else:
+			dataDict[data] = 1
+	print "Vital_status Breakdown"
+	for key, value in dataDict.iteritems():
+		print key + ": " + str(value)
+	print ""
+	return dataDict
+
 
 def getAllSummary():
 	patientList = DataUtilities.getListofPatients()
@@ -98,6 +170,9 @@ def getAllSummary():
 	getSummaryRace(patientList)
 	getSummaryEthnicity(patientList)
 	getSummaryPathologic_stage(patientList)
-	getSummaryClinical_stage(patientList)
+	getSummaryNumber_pack_years_smoked(patientList)
+	getSummaryTobacco_smoking_history(patientList)
+	getSummaryPrimary_therapy_outcome_success(patientList)
+	getSummaryVital_status(patientList)
 
 getAllSummary()
