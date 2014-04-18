@@ -164,7 +164,7 @@ def getSummaryVital_status(patientList=None):
 
 
 def getAllSummary():
-	patientList = DataUtilities.getListofPatients()
+	patientList = DataUtilities.getListofPlatPatients()
 	getSummaryGender(patientList)
 	getSummaryPrior_dx(patientList)
 	getSummaryRace(patientList)

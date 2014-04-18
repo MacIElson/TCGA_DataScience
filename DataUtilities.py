@@ -3,6 +3,7 @@ import numpy
 import os
 import csv
 import xml.etree.ElementTree as ET
+import numpy as np
 
 class Patient:
 	"""A class for a Single Patient"""
@@ -111,11 +112,24 @@ class Patient:
 	def getTobacco_smoking_history(self):
 		return self.patientRootElement.find('luad:patient/shared:tobacco_smoking_history' , namespaces=getPatientXMLNameSpaces()).text
 
+	def getListofDrugsTaken(self):
+		namespaces = getPatientXMLNameSpaces()
+		self.drugs = []
+		for drugs in self.patientRootElement.findall("luad:patient/rx:drugs", namespaces=namespaces):
+			for drug in drugs:
+				drugName = drug.find('rx:drug_name' , namespaces=namespaces).text
+				if drugName:
+					self.drugs.append(getTrueDrugName(drugName.lower()))
+		return self.drugs
+
+
+
 	def assignVariablesToSelf(self):
 		self.caseid = self.getBcr_patient_barcode()
 		self.vital_status = self.getVital_statusClean()
 		self.gender = self.getGenderClean()
 		self.pathologic_stage = self.getPathologic_stageClean()
+		self.drugs = self.getListofDrugsTaken()
 
 	def is_complete(self, attrs):
 		"""Checks whether a respondent has all required variables.
@@ -125,7 +139,7 @@ class Patient:
 		Returns: boolean
 		"""
 		t = [getattr(self, attr) for attr in attrs]
-		complete = ('Unknown' not in t)
+		complete = ('Unknown' not in t and ("carboplatin" in self.drugs or "cisplatin" in self.drugs))
 		return complete
 
 	def addMutation(self, mutation):
@@ -278,6 +292,25 @@ def getListofPatients():
 			patientDict[row[15][0:12]].addMutation(mutation)
 	return patientDict.values()
 
+def getListofPlatPatients():
+	"""returns a list of Patients that have drug information, their patient xml tree, biospecimen xml tree and a list of mutations"""
+	ifile  = open(os.path.abspath("Data/broad.mit.edu__Illumina_Genome_Analyzer_DNA_Sequencing_level2.csv"), "rb")
+	reader = csv.reader(ifile, delimiter='	')
+	patientBarcodeList = getPatientWithDrugBarcodes()
+	patientDict = getDictionaryOfPatients()
+	for key, patient in patientDict.items():
+		drugs = patient.getListofDrugsTaken()
+		if "cisplatin" not in drugs and "carboplatin" not in drugs:
+			print "hello"
+			patientDict.pop(key, None)
+			if key in patientBarcodeList: patientBarcodeList.remove(key)
+	mutationList = []
+	for row in reader:
+		if row[15][0:12] in patientBarcodeList:
+			mutation = Mutation(row)
+			patientDict[row[15][0:12]].addMutation(mutation)
+	return patientDict.values()
+
 def getDictReadofPatients():
 	"""returns a dict of Patients that have drug information, their patient xml tree, biospecimen xml tree and a list of mutations"""
 	ifile  = open(os.path.abspath("Data/broad.mit.edu__Illumina_Genome_Analyzer_DNA_Sequencing_level2.csv"), "rb")
@@ -290,3 +323,17 @@ def getDictReadofPatients():
 			mutation = Mutation(row)
 			patientDict[row[15][0:12]].addMutation(mutation)
 	return patientDict
+
+def getDataForScikit():
+	DESCR = ["Gender","Stage"]
+	patientDict = getDictReadofPatients()
+	data = []
+	target= []
+	for patient in patientDict.values():
+		gender = patient.getGenderClean()
+		stage = patient.getPathologic_stageClean()
+		pdata = [gender, stage]
+		ptarget = patient.getVital_statusClean()
+		data.append(pdata)
+		target.append(ptarget)
+	return {"data": np.array(data), "target":np.array(target)}
