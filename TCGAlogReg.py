@@ -558,7 +558,7 @@ def test_models(version=2, resample_flag=False):
 	run_regression_and_print(survey, version=version, means=means)
 
 def main(script):
-	test_models()
+	test_models(version = 30)
 	return
 
 if __name__ == '__main__':

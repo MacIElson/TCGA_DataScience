@@ -5,6 +5,7 @@ import csv
 import xml.etree.ElementTree as ET
 import numpy as np
 import random
+import mutationDict
 
 class Patient:
 	"""A class for a Single Patient"""
@@ -16,6 +17,7 @@ class Patient:
 	def __init__(self, patientRootElement):
 		self.patientRootElement = patientRootElement
 		self.mutations = []
+		self.mutationNames = []
 
 	def addBioSpecimenRootElement(self, biospecimenRootElement):
 		self.biospecimenRootElement = biospecimenRootElement
@@ -162,6 +164,8 @@ class Patient:
 		self.prior_dx = self.getPrior_dxClean()
 		self.years_to_birth  = self.getYears_to_birthClean()
 		self.number_pack_years_smoked = self.getNumber_pack_years_smokedClean()
+		for mutationName in self.getNonSilentMutationNames():
+			setattr(self, mutationName, 1)
 
 	def is_complete(self, attrs):
 		"""Checks whether a respondent has all required variables.
@@ -181,15 +185,17 @@ class Patient:
 		return mutations
 
 	def getNonSilentMutationNames(self):
-		self.mutationNames = []
-		for mutation in self.mutations:
-			if not mutation.getIfSilent():
-				name = mutation.getName()
-				if name not in self.mutationNames:
-					self.mutationNames.append(name)
-		print "Number of mutations for patient: " + str(len(self.mutationNames))
+		if len(self.mutationNames) > 0:
+			return self.mutationNames
+		else:
+			self.mutationNames = []
+			for mutation in self.mutations:
+				if not mutation.getIfSilent():
+					name = mutation.getName()
+					if name not in self.mutationNames:
+						self.mutationNames.append(name)
+			print "Number of mutations for patient: " + str(len(self.mutationNames))
 		return self.mutationNames
-
 
 def findPatientFiles(location = os.path.abspath("Data/PatientXML")):
 	"takes the location of the clinical xml files"
@@ -302,7 +308,7 @@ def getDictionaryOfPatients():
 	patientDict = {}
 	patientList = getListOfPatientObjects()
 	for patient in patientList:
-		patient.assignVariablesToSelf()
+
 		patientDict[patient.getBcr_patient_barcode()] = patient
 	return patientDict
 
@@ -352,7 +358,7 @@ def getDictofMutationNamesImproved():
 				mutationDict[name] = 1
 		num += 1
 	valueDict = {}
-	for value in mutationDict.values():
+	for key, value in mutationDict.items():
 		if value in valueDict.keys():
 			valueDict[value] += 1
 		else:
@@ -361,6 +367,28 @@ def getDictofMutationNamesImproved():
 	print "Dictionary of mutation counts: " + str(mutationDict)
 	print "valueDict: " + str(valueDict)
 
+def getMutationsOccuringGreaterThan(num,patientDict):
+	mutationDict = {}
+	for patient in patientDict.values():
+		mutationNames = patient.getNonSilentMutationNames()
+		for name in mutationNames:
+			if name in mutationDict.keys():
+				mutationDict[name] += 1
+			else:
+				mutationDict[name] = 1
+	mutationsMatter = []
+	for key, value in mutationDict.items():
+		if value>num:
+			mutationsMatter.append(key)
+	return mutationsMatter
+
+def getMutationOccuringDict():
+	patientDict = getDictReadofPatientsFilled()
+	mutationDictofLists = {}
+	for num in range(1,63):
+		mutationDictofLists[num] = getMutationsOccuringGreaterThan(num,patientDict)
+		print num
+	return mutationDictofLists
 
 def getListofMutations():
 	"""get a List of Mutations for patients that have drug data"""
@@ -427,21 +455,25 @@ def getDictReadofPatientsFilled():
 	for attribute in control:
 		knownVariableDict[attribute] = []
 	for patient in patientDict.values():
+		patient.assignVariablesToSelf()
 		for attribute in control:
-			attr = getattr(patient, attribute)
-			if attr != "Unknown":
-				knownVariableDict[attribute].append(attr)
+			try:
+				attr = getattr(patient, attribute)
+				if attr != "Unknown":
+					knownVariableDict[attribute].append(attr)
+			except AttributeError:
+				setattr(patient, attribute, 0)
 	for patient in patientDict.values():
 		for attribute in control:
 			attr = getattr(patient, attribute)
-			if attr == "Unknown" or None:
+			if attr == "Unknown":
 				setattr(patient, attribute, random.choice(knownVariableDict[attribute]))
 	print knownVariableDict["years_to_birth"]
 	for key, value in knownVariableDict.items():
 		print str(key) + ":" + str(len(value))
 	return patientDict
 
-def get_version(version=0):
+def get_version(version=1):
 	"""Gets the variables for different versions of the model.
 
 	version: int
@@ -451,6 +483,8 @@ def get_version(version=0):
 	dep = 'vital_status'
 
 	control = ['pathologic_stage', 'gender','prior_dx', 'years_to_birth', 'number_pack_years_smoked']
+	mut = mutationDict.getMutationsGreaterThan(version)
+	control += mut
 	return dep, control
 
 def getDataForScikit():
@@ -467,4 +501,5 @@ def getDataForScikit():
 		target.append(ptarget)
 	return {"data": np.array(data), "target":np.array(target)}
 
-getDictofMutationNamesImproved()
+#getDictofMutationNamesImproved()
+#print getMutationOccuringDict()
