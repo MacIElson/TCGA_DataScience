@@ -6,6 +6,7 @@ import thinkplot
 import math
 import numpy as np
 import matplotlib.pyplot as pyplot
+import random
 
 from DataUtilities import *
 
@@ -38,8 +39,8 @@ def run_regression(survey, version):
 
 
 
-def read_complete(version):
-	survey = read_survey()
+def read_complete(version,patients):
+	survey = read_survey(patients)
 
 	# give respondents random values
 	random.seed(17)
@@ -85,10 +86,8 @@ class Survey(object):
 		"""Looks up a caseid and returns the Respondent object."""
 		return self.rs[caseid]
 
-	def loadPatients(self):
-		patients = getDictReadofPatients()
-		for key, value in patients.items():
-			self.rs[key] = value
+	def loadPatients(self, patients):
+		self.rs = patients
 
 	def subsample(self, filter_func):
 		"""Form a new cohort by filtering respondents
@@ -351,6 +350,7 @@ class LogRegression(object):
 		"""
 		cumulative = cumulative_odds(self.estimates, means)
 		print_cumulative_odds(cumulative)
+		return cumulative
 
 	def make_pickleable(self):
 		self.res = None
@@ -396,10 +396,12 @@ class Regressions(object):
 
 	def print_regression_reports(self, means):
 		for reg in self.regs:
+			print "test"
 			reg.report()
 			reg.report_odds(means)
 			print 'AIC', reg.aic
 			print 'SIP', reg.sip
+
 
 	def median_model(self):
 		rows = []
@@ -532,30 +534,19 @@ class Regressions(object):
 		write_latex_table(fp, header, rows, format)
 		fp.close()
 
-def read_survey():
+def read_survey(patients):
 	survey = Survey()
-	survey.loadPatients()
+	survey.loadPatients(patients)
 	print survey.len()
 	return survey
-
-def get_version(version):
-	"""Gets the variables for different versions of the model.
-
-	version: int
-
-	Returns: string, list of strings
-	"""
-	dep = 'vital_status'
-
-	control = ['pathologic_stage', 'gender']
-	return dep, control
 
 def test_models(version=2, resample_flag=False):
 	means = dict(educ_from_12=4,
 			born_from_1960=10)
 
+	patients = getDictReadofPatientsFilled()
 	# read the survey
-	survey, complete = read_complete(version)
+	survey, complete = read_complete(version, patients)
 
 	#compare_survey_and_complete(survey, complete)
 

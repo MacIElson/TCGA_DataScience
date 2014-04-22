@@ -108,6 +108,8 @@ def getSummaryNumber_pack_years_smoked(patientList=None):
 	print ""
 	return dataDict
 
+
+
 def getSummaryTobacco_smoking_history(patientList=None):
 	if patientList is None:
 		patientList = DataUtilities.getListofPatients()
@@ -162,6 +164,24 @@ def getSummaryVital_status(patientList=None):
 	print ""
 	return dataDict
 
+def getSummaryYears_to_Birth(patientList=None):
+	if patientList is None:
+		patientList = DataUtilities.getListofPatients()
+	dataDict = {}
+	for patient in patientList:
+		data = patient.getYears_to_birthClean()
+		if data == None:
+			data = "Unknown"
+		if data in dataDict.keys():
+			dataDict[data] += 1
+		else:
+			dataDict[data] = 1
+	print "Years_to_Birth Breakdown"
+	for key, value in dataDict.iteritems():
+		print str(key) + ": " + str(value)
+	print ""
+	return dataDict
+
 
 def getAllSummary():
 	patientList = DataUtilities.getListofPlatPatients()
@@ -174,5 +194,6 @@ def getAllSummary():
 	getSummaryTobacco_smoking_history(patientList)
 	getSummaryPrimary_therapy_outcome_success(patientList)
 	getSummaryVital_status(patientList)
+	getSummaryYears_to_Birth(patientList)
 
 getAllSummary()

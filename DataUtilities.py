@@ -4,10 +4,10 @@ import os
 import csv
 import xml.etree.ElementTree as ET
 import numpy as np
+import random
 
 class Patient:
 	"""A class for a Single Patient"""
-	mutations = []
 	compwt=float
 	sei=float
 	masei=float
@@ -15,6 +15,7 @@ class Patient:
 
 	def __init__(self, patientRootElement):
 		self.patientRootElement = patientRootElement
+		self.mutations = []
 
 	def addBioSpecimenRootElement(self, biospecimenRootElement):
 		self.biospecimenRootElement = biospecimenRootElement
@@ -28,6 +29,15 @@ class Patient:
 		if prior_dx == "Yes, History of Prior Malignancy":
 			prior_dx = "Yes"
 		return prior_dx
+
+	def getPrior_dxClean(self):
+		prior_dx = self.getPrior_dx()
+		if prior_dx == "Yes":
+			return 1
+		elif prior_dx == "No":
+			return 0
+		else:
+			return "Unknown"
 
 	def getPrimary_therapy_outcome_success(self):
 		primary_therapy_outcome_success = self.patientRootElement.find('luad:patient/shared:primary_therapy_outcome_success' , namespaces=getPatientXMLNameSpaces())
@@ -63,6 +73,12 @@ class Patient:
 	def getDays_to_birth(self):
 		return self.patientRootElement.find('luad:patient/shared:days_to_birth' , namespaces=getPatientXMLNameSpaces()).text
 
+	def getYears_to_birthClean(self):
+		days = self.getDays_to_birth()
+		if days == None:
+			return "Unknown"
+		else:
+			return abs(int(float(days)/365.25)) - 60
 	def getDays_to_last_known_alive(self):
 		return self.patientRootElement.find('luad:patient/shared:days_to_last_known_alive' , namespaces=getPatientXMLNameSpaces()).text
 
@@ -112,6 +128,19 @@ class Patient:
 	def getTobacco_smoking_history(self):
 		return self.patientRootElement.find('luad:patient/shared:tobacco_smoking_history' , namespaces=getPatientXMLNameSpaces()).text
 
+	def getNumber_pack_years_smokedClean(self):
+		packYears = self.getNumber_pack_years_smoked()
+		history = self.getTobacco_smoking_history()
+		if packYears:
+			return int(float(packYears))
+		elif history:
+			if history == "Lifelong Non-smoker":
+				return 0
+			elif history == "Current reformed smoker for < or = 15 years":
+				return 31 #assume average for a "Current reformed smoker for < or = 15 years"
+		return "Unknown"
+
+
 	def getListofDrugsTaken(self):
 		namespaces = getPatientXMLNameSpaces()
 		self.drugs = []
@@ -130,6 +159,9 @@ class Patient:
 		self.gender = self.getGenderClean()
 		self.pathologic_stage = self.getPathologic_stageClean()
 		self.drugs = self.getListofDrugsTaken()
+		self.prior_dx = self.getPrior_dxClean()
+		self.years_to_birth  = self.getYears_to_birthClean()
+		self.number_pack_years_smoked = self.getNumber_pack_years_smokedClean()
 
 	def is_complete(self, attrs):
 		"""Checks whether a respondent has all required variables.
@@ -147,6 +179,17 @@ class Patient:
 
 	def getAllMutations(self):
 		return mutations
+
+	def getNonSilentMutationNames(self):
+		self.mutationNames = []
+		for mutation in self.mutations:
+			if not mutation.getIfSilent():
+				name = mutation.getName()
+				if name not in self.mutationNames:
+					self.mutationNames.append(name)
+		print "Number of mutations for patient: " + str(len(self.mutationNames))
+		return self.mutationNames
+
 
 def findPatientFiles(location = os.path.abspath("Data/PatientXML")):
 	"takes the location of the clinical xml files"
@@ -268,6 +311,57 @@ class Mutation:
 	def __init__(self, mutationRow):
 		self.mutationRow = mutationRow
 
+	def getName(self):
+		return self.mutationRow[0]
+
+	def getIfSilent(self):
+		return self.mutationRow[8].lower() == "silent"
+
+def getDictofMutationNames():
+	ifile  = open(os.path.abspath("Data/broad.mit.edu__Illumina_Genome_Analyzer_DNA_Sequencing_level2.csv"), "rb")
+	reader = csv.reader(ifile, delimiter='	')
+	patientBarcodeList = getPatientWithDrugBarcodes()
+	mutationDict = {}
+	for row in reader:
+		if row[15][0:12] in patientBarcodeList:
+			mutation = Mutation(row)
+			name = mutation.getName()
+			if name in mutationDict.keys():
+				mutationDict[name] += 1
+			else:
+				mutationDict[name] = 1
+	valueDict = {}
+	for value in mutationDict.values():
+		if value in valueDict.keys():
+			valueDict[value] += 1
+		else:
+			valueDict[value] = 1
+	print valueDict
+
+def getDictofMutationNamesImproved():
+	patientDict = getDictReadofPatients()
+	print "good"
+	num = 0
+	mutationDict = {}
+	for patient in patientDict.values():
+		mutationNames = patient.getNonSilentMutationNames()
+		for name in mutationNames:
+			if name in mutationDict.keys():
+				mutationDict[name] += 1
+			else:
+				mutationDict[name] = 1
+		num += 1
+	valueDict = {}
+	for value in mutationDict.values():
+		if value in valueDict.keys():
+			valueDict[value] += 1
+		else:
+			valueDict[value] = 1
+	print "number of mution names: "+ str(len(mutationDict.values()))
+	print "Dictionary of mutation counts: " + str(mutationDict)
+	print "valueDict: " + str(valueDict)
+
+
 def getListofMutations():
 	"""get a List of Mutations for patients that have drug data"""
 	ifile  = open(os.path.abspath("Data/broad.mit.edu__Illumina_Genome_Analyzer_DNA_Sequencing_level2.csv"), "rb")
@@ -301,7 +395,6 @@ def getListofPlatPatients():
 	for key, patient in patientDict.items():
 		drugs = patient.getListofDrugsTaken()
 		if "cisplatin" not in drugs and "carboplatin" not in drugs:
-			print "hello"
 			patientDict.pop(key, None)
 			if key in patientBarcodeList: patientBarcodeList.remove(key)
 	mutationList = []
@@ -318,11 +411,47 @@ def getDictReadofPatients():
 	patientBarcodeList = getPatientWithDrugBarcodes()
 	patientDict = getDictionaryOfPatients()
 	mutationList = []
+	count = 0
 	for row in reader:
 		if row[15][0:12] in patientBarcodeList:
+			count += 1
 			mutation = Mutation(row)
 			patientDict[row[15][0:12]].addMutation(mutation)
+	print "count: " + str(count)
 	return patientDict
+
+def getDictReadofPatientsFilled():
+	patientDict = getDictReadofPatients()
+	dep, control = get_version()
+	knownVariableDict = {}
+	for attribute in control:
+		knownVariableDict[attribute] = []
+	for patient in patientDict.values():
+		for attribute in control:
+			attr = getattr(patient, attribute)
+			if attr != "Unknown":
+				knownVariableDict[attribute].append(attr)
+	for patient in patientDict.values():
+		for attribute in control:
+			attr = getattr(patient, attribute)
+			if attr == "Unknown" or None:
+				setattr(patient, attribute, random.choice(knownVariableDict[attribute]))
+	print knownVariableDict["years_to_birth"]
+	for key, value in knownVariableDict.items():
+		print str(key) + ":" + str(len(value))
+	return patientDict
+
+def get_version(version=0):
+	"""Gets the variables for different versions of the model.
+
+	version: int
+
+	Returns: string, list of strings
+	"""
+	dep = 'vital_status'
+
+	control = ['pathologic_stage', 'gender','prior_dx', 'years_to_birth', 'number_pack_years_smoked']
+	return dep, control
 
 def getDataForScikit():
 	DESCR = ["Gender","Stage"]
@@ -337,3 +466,5 @@ def getDataForScikit():
 		data.append(pdata)
 		target.append(ptarget)
 	return {"data": np.array(data), "target":np.array(target)}
+
+getDictofMutationNamesImproved()
