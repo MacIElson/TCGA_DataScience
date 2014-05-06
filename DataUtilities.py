@@ -80,7 +80,7 @@ class Patient:
 		if days == None:
 			return "Unknown"
 		else:
-			return abs(int(float(days)/365.25)) - 60
+			return abs(int(float(days)/365.25))
 	def getDays_to_last_known_alive(self):
 		return self.patientRootElement.find('luad:patient/shared:days_to_last_known_alive' , namespaces=getPatientXMLNameSpaces()).text
 
@@ -194,13 +194,12 @@ class Patient:
 					name = mutation.getName()
 					if name not in self.mutationNames:
 						self.mutationNames.append(name)
-			print "Number of mutations for patient: " + str(len(self.mutationNames))
+			#print "Number of mutations for patient: " + str(len(self.mutationNames))
 		return self.mutationNames
 
 def findPatientFiles(location = os.path.abspath("Data/PatientXML")):
 	"takes the location of the clinical xml files"
 	"returns a list of the file paths of all the patients"
-	print location
 	files = glob.glob(location + "/*.xml")
 	matching = [s for s in files if "_clinical" in s]
 	return matching
@@ -346,7 +345,6 @@ def getDictofMutationNames():
 
 def getDictofMutationNamesImproved():
 	patientDict = getDictReadofPatients()
-	print "good"
 	num = 0
 	mutationDict = {}
 	for patient in patientDict.values():
@@ -387,7 +385,6 @@ def getMutationOccuringDict():
 	mutationDictofLists = {}
 	for num in range(1,63):
 		mutationDictofLists[num] = getMutationsOccuringGreaterThan(num,patientDict)
-		print num
 	return mutationDictofLists
 
 def getListofMutations():
@@ -445,11 +442,12 @@ def getDictReadofPatients():
 			count += 1
 			mutation = Mutation(row)
 			patientDict[row[15][0:12]].addMutation(mutation)
-	print "count: " + str(count)
+	#print "count: " + str(count)
 	return patientDict
 
-def getDictReadofPatientsFilled():
-	patientDict = getDictReadofPatients()
+def getDictReadofPatientsFilled(patientDict = -1):
+	if patientDict == -1:
+		patientDict = getDictReadofPatients()
 	dep, control = get_version()
 	knownVariableDict = {}
 	for attribute in control:
@@ -467,25 +465,36 @@ def getDictReadofPatientsFilled():
 		for attribute in control:
 			attr = getattr(patient, attribute)
 			if attr == "Unknown":
-				setattr(patient, attribute, random.choice(knownVariableDict[attribute]))
-	print knownVariableDict["years_to_birth"]
-	for key, value in knownVariableDict.items():
-		print str(key) + ":" + str(len(value))
+				ran = random.choice(knownVariableDict[attribute])
+				setattr(patient, attribute, ran)
+	#print knownVariableDict["years_to_birth"]
 	return patientDict
 
-def get_version(version=1):
+def get_versionNUmberofMutations(version=(1,-1)):
+		mut = mutationDict.getMutationsGreaterThan(version[0])
+		return len(mut)
+
+def get_version(version=(1,-1)):
 	"""Gets the variables for different versions of the model.
 
 	version: int
 
 	Returns: string, list of strings
 	"""
+	print "version: " + str(version)
 	dep = 'vital_status'
 
 	control = ['pathologic_stage', 'gender','prior_dx', 'years_to_birth', 'number_pack_years_smoked']
-	mut = mutationDict.getMutationsGreaterThan(version)
+	if version[1] == -1:
+		mut = mutationDict.getMutationsGreaterThan(version[0])
+	else:
+		mut = [mutationDict.getMutationsGreaterThan(version[0])[version[1]]]
+		#print mut
 	control += mut
+	#print control
+	#return ('vital_status', ['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'PCDHGC5'])
 	return dep, control
+
 
 def getDataForScikit():
 	DESCR = ["Gender","Stage"]

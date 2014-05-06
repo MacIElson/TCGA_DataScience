@@ -65,20 +65,27 @@ def get_coeffs(res):
     aic = None
 
     for line in lines.split('\n'):
+        #print "line: " + str(line)
         line = line.strip()
-        if line.startswith('---'):
+        #print "lineStrip: " + str(line)
+        if line.startswith('---') or line == "":
+            #print "startswith('---')"
             flag = False
         if line.startswith('AIC'):
+            #print "startswith('AIC')"
             t = line.split()
             aic = float(t[1])
         if flag:
+            #print "flag"
             t = line.split()
+            #print "t: " + str(t)
             var = t[0]
             est = float(t[1])
             error = float(t[2])
             z = float(t[3])
             res.append((var, est, error, z))
         if line.startswith('Estimate'):
+            #print "startswith('Estimate')"
             flag = True
 
     return res, aic

@@ -101,3 +101,23 @@ patientsWithDrugs = DataUtilities.getPatientsWithDrugsLocation(location = "/home
 # 			VitalStatusList[vitalStatus.lower()] = 1
 # print VitalStatusList
 # thinkplot.Hist(VitalStatusHist)
+
+vital_status ['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'MUC16']
+
+['PCDHGC5']
+['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'PCDHGC5']
+['PCDHGC5']
+['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'PCDHGC5']
+('vital_status', ['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'PCDHGC5'])
+
+['PCDHAC2']
+['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'PCDHAC2']
+['PCDHAC2']
+['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'PCDHAC2']
+('vital_status', ['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'PCDHAC2'])
+
+['CSMD3']
+['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'CSMD3']
+['CSMD3']
+['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'CSMD3']
+('vital_status', ['pathologic_stage', 'gender', 'prior_dx', 'years_to_birth', 'number_pack_years_smoked', 'CSMD3'])

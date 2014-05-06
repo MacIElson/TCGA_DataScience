@@ -6,9 +6,8 @@ import thinkplot
 import math
 import numpy as np
 import matplotlib.pyplot as pyplot
-import random
 
-from DataUtilities import *
+import DataUtilities
 
 def run_regression_and_print(survey, version, means):
 	"""Runs a logistic regression and prints results
@@ -22,6 +21,7 @@ def run_regression_and_print(survey, version, means):
 	regs = run_regression(survey, version)
 	regs.print_regression_reports(means)
 	regs.summarize(means)
+	return regs
 
 def run_regression(survey, version):
 	"""Runs logistic regressions.
@@ -31,10 +31,11 @@ def run_regression(survey, version):
 
 	Returns: Regressions object
 	"""
-	dep, control = get_version(version)
+	dep, control = DataUtilities.get_version(version)
+
 	print dep, control
 	reg = survey.make_logistic_regression(dep, control)
-	print reg
+	#print reg
 	return Regressions([reg])
 
 
@@ -43,11 +44,10 @@ def read_complete(version,patients):
 	survey = read_survey(patients)
 
 	# give respondents random values
-	random.seed(17)
 	#[r.clean_random() for r in survey.respondents()]
 
 	# select complete records
-	dep, control = get_version(version)
+	dep, control = DataUtilities.get_version(version)
 	#for var in [dep] + control:
 	#	print r'\verb"%s",' % var
 
@@ -120,7 +120,7 @@ class Survey(object):
 		reg.model_sip = self.self_information_partition(dep, reg)
 		reg.sip = reg.null_sip - reg.model_sip
 
-		print reg.null_sip, reg.model_sip, reg.sip
+		#print reg.null_sip, reg.model_sip, reg.sip
 
 		return reg
 	def logistic_regression(self, model, print_flag=False):
@@ -339,7 +339,7 @@ class LogRegression(object):
 			print 'No summary'
 		glm.print_summary(self.res)
 
-	def report_odds(self, means):
+	def report_odds(self, means, printCum = True):
 		"""Prints a summary of the estimated parameters.
 
 		Iterates the attributes and computes the odds ratio, for
@@ -349,7 +349,8 @@ class LogRegression(object):
 		means: map from attribute to value
 		"""
 		cumulative = cumulative_odds(self.estimates, means)
-		print_cumulative_odds(cumulative)
+		if printCum:
+			print_cumulative_odds(cumulative)
 		return cumulative
 
 	def make_pickleable(self):
@@ -396,7 +397,6 @@ class Regressions(object):
 
 	def print_regression_reports(self, means):
 		for reg in self.regs:
-			print "test"
 			reg.report()
 			reg.report_odds(means)
 			print 'AIC', reg.aic
@@ -537,28 +537,35 @@ class Regressions(object):
 def read_survey(patients):
 	survey = Survey()
 	survey.loadPatients(patients)
-	print survey.len()
 	return survey
 
-def test_models(version=2, resample_flag=False):
+def test_models(version=(30,-1), resample_flag=False, patients = -1, printReg = True):
 	means = dict(educ_from_12=4,
 			born_from_1960=10)
 
-	patients = getDictReadofPatientsFilled()
+	if patients == -1:
+		patients = DataUtilities.getDictReadofPatientsFilled()
+	#patients = getDictReadofPatientsFilled()
 	# read the survey
 	survey, complete = read_complete(version, patients)
 
+	print DataUtilities.get_version(version)
+
 	#compare_survey_and_complete(survey, complete)
 
-	print 'all respondents', survey.len()
+	#print 'all respondents', survey.len()
 
-	print 'complete', complete.len()
+	#print 'complete', complete.len()
 
 	# run the models
-	run_regression_and_print(survey, version=version, means=means)
+	if printReg:
+		regs = run_regression_and_print(survey, version=version, means=means)
+	else:
+		regs = run_regression(survey, version)
+	return regs
 
 def main(script):
-	test_models(version = 30)
+	test_models(version = (30,-1))
 	return
 
 if __name__ == '__main__':
